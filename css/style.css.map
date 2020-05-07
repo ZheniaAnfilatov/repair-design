@@ -10,5 +10,5 @@
         "../sass/templates/_header.sass"
     ],
     "names": [],
-    "file": "style.min.css"
+    "file": "style.css"
 }
