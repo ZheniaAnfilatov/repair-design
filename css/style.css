@@ -338,6 +338,8 @@ template {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff; }
+    .button--outline:hover {
+      text-decoration: underline; }
 
 .container {
   width: 85%;
