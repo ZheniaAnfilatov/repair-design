@@ -510,9 +510,7 @@ body {
   .nav {
     display: none; }
   .hero__instagram {
-    display: none; }
-  .hero__content {
-    margin-left: 0; } }
+    display: none; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -525,14 +523,16 @@ body {
     font-size: 1.64rem; }
   .hero__scroll-down {
     display: none; }
-  .hero__content {
+  .hero__title {
     max-width: 22.86rem; }
+  .hero__content {
+    margin: 0; }
   .hero__text {
     font-size: 1.29rem;
     margin-bottom: 2.28rem; }
   .hero__button {
     display: block;
-    min-width: 22.86rem;
+    min-width: 24.19rem;
     margin-bottom: 1.85rem; } }
 
 @media screen and (max-height: 560px) {
