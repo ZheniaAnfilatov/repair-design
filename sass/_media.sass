@@ -3,9 +3,16 @@
     font-size: 12px
 @media screen and ( max-width: 1200px )
   .nav
+    margin-left: 4rem
     &__item
-      margin-right: 1rem
+      margin-right: 1.5rem
+  .contacts
+    &__phone
+      margin-left: 2rem
 @media screen and ( max-width: 992px )
+  .menu
+    justify-content: space-around
+    margin-left: 0
   .nav
     display: none
   .hero
@@ -21,13 +28,14 @@
       text-decoration: none
     &__button
       display: none
-  .title
-    font-size: 1.64rem
   .hero
+    padding: 10px
+    justify-content: space-around
     &__scroll-down
       display: none
     &__title
       max-width: 22.86rem
+      font-size: 2rem
     &__content
       margin: 0
     &__text
@@ -37,6 +45,7 @@
       display: block
       min-width: 24.19rem
       margin-bottom: 1.85rem
+      margin-right: 0
 @media screen and ( max-height: 560px )
   .hero
     &__scroll-down

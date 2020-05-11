@@ -500,17 +500,25 @@ body {
   margin: 0;
   margin-bottom: 1.43rem; }
   .title--primary {
-    color: #E3B873; }
+    color: #E3B873;
+    letter-spacing: -0.3px; }
 
 @media screen and (max-width: 1360px) {
   html {
     font-size: 12px; } }
 
 @media screen and (max-width: 1200px) {
-  .nav__item {
-    margin-right: 1rem; } }
+  .nav {
+    margin-left: 4rem; }
+    .nav__item {
+      margin-right: 1.5rem; }
+  .contacts__phone {
+    margin-left: 2rem; } }
 
 @media screen and (max-width: 992px) {
+  .menu {
+    justify-content: space-around;
+    margin-left: 0; }
   .nav {
     display: none; }
   .hero__instagram {
@@ -525,21 +533,24 @@ body {
     text-decoration: none; }
   .contacts__button {
     display: none; }
-  .title {
-    font-size: 1.64rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__title {
-    max-width: 22.86rem; }
-  .hero__content {
-    margin: 0; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    display: block;
-    min-width: 24.19rem;
-    margin-bottom: 1.85rem; } }
+  .hero {
+    padding: 10px;
+    justify-content: space-around; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__title {
+      max-width: 22.86rem;
+      font-size: 2rem; }
+    .hero__content {
+      margin: 0; }
+    .hero__text {
+      font-size: 1.29rem;
+      margin-bottom: 2.28rem; }
+    .hero__button {
+      display: block;
+      min-width: 24.19rem;
+      margin-bottom: 1.85rem;
+      margin-right: 0; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {
