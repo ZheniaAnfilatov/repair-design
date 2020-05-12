@@ -621,9 +621,8 @@ img {
       margin-bottom: 2.28rem; }
     .hero__button {
       display: block;
-      min-width: 24.19rem;
-      margin-bottom: 1.85rem;
-      margin-right: 0; } }
+      width: 100%;
+      margin-bottom: 1.85rem; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {
