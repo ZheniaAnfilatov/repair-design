@@ -345,7 +345,7 @@ template {
 .container {
   width: 100%;
   max-width: 1256px;
-  margin: auto; }
+  margin: 0 auto; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -388,8 +388,8 @@ img {
 
 .menu {
   display: flex;
-  align-items: center;
-  margin-left: 5.71rem; }
+  justify-content: space-between;
+  align-items: center; }
 
 .logo {
   color: #E3B873;
@@ -398,22 +398,23 @@ img {
   font-weight: 500; }
 
 .nav {
-  margin-left: 7.8rem; }
+  margin-left: 2.8rem; }
   .nav__item {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    margin-right: 2.66rem;
+    margin-right: 2.7rem;
     transition: color 0.2s; }
     .nav__item:hover {
       color: #E3B873; }
 
 .phone {
-  margin-left: 6.3rem;
   color: #E3B873; }
 
-.contacts__phone {
-  margin-right: 3.1rem; }
+.contacts {
+  margin-left: 1rem; }
+  .contacts__phone {
+    margin-right: 3.21rem; }
 
 .hero {
   position: relative;
@@ -434,8 +435,8 @@ img {
   .hero__content {
     position: relative;
     max-width: 47.85rem;
-    margin-left: 4.28rem;
-    padding-top: 1.8rem; }
+    margin-left: 1.3rem;
+    padding-top: 1.3rem; }
   .hero__text {
     font-size: 1.57rem;
     max-width: 500px;
@@ -565,7 +566,9 @@ img {
 
 @media screen and (max-width: 1360px) {
   html {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .logo {
+    margin-left: 4rem; } }
 
 @media screen and (max-width: 1200px) {
   .nav {
@@ -579,6 +582,8 @@ img {
   .menu {
     justify-content: space-around;
     margin-left: 0; }
+  .logo {
+    margin: 0; }
   .nav {
     display: none; }
   .hero__instagram {
@@ -609,11 +614,13 @@ img {
       display: none; }
     .hero__title {
       max-width: 22.86rem;
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin-bottom: 1rem; }
     .hero__content {
-      margin: 0; }
+      margin: 0;
+      padding: 0; }
     .hero__text {
-      font-size: 1.29rem;
+      font-size: 1.6rem;
       margin-bottom: 2.28rem; }
     .hero__button {
       display: block;
