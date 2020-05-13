@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
@@ -360,8 +361,11 @@ body {
 img {
   max-width: 100%; }
 
+.svg-logo {
+  width: 28px; }
+
 .section {
-  padding: 60px 0; }
+  padding: 5rem 0; }
   .section-title {
     text-align: center;
     text-transform: uppercase;
@@ -556,6 +560,30 @@ img {
   color: #fff;
   padding: 1.214rem 2.8rem; }
 
+.design {
+  padding-bottom: 10rem; }
+  .design__section-title {
+    margin-bottom: 1.2rem; }
+  .design__text {
+    font-size: 1.43rem;
+    line-height: 1.93rem;
+    text-align: center;
+    max-width: 52.93rem;
+    margin: 0 auto; }
+    .design__text--section {
+      margin-bottom: 3.4rem; }
+  .design__pricetag {
+    position: absolute;
+    left: 0;
+    bottom: -1.79rem;
+    font-size: 1.29rem;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: #E3B873;
+    color: #fff;
+    padding: 1.214rem 5.143rem 1.214rem 2.357rem; }
+
 @media screen and (max-width: 1360px) {
   html {
     font-size: 12px; }
@@ -632,7 +660,42 @@ img {
       display: block;
       width: 100%;
       margin-bottom: 1.85rem;
-      font-size: 1.1rem; } }
+      font-size: 1.1rem; }
+  .section-title__heading {
+    font-size: 1.8rem; }
+  .card__title {
+    font-size: 1.22rem;
+    padding-left: 0.6rem; }
+  .card__image {
+    padding: 1.5rem; }
+  .card__text {
+    margin-left: 1.5rem;
+    margin-top: -13.6rem;
+    max-width: 22.5rem; }
+  .card__list {
+    line-height: 1.9rem;
+    padding: 0 0 0 1.5rem;
+    margin-bottom: 1.7rem; }
+    .card__list--mobile {
+      position: relative;
+      max-height: 12.3rem;
+      overflow: hidden; }
+      .card__list--mobile::before {
+        content: '…';
+        position: absolute;
+        left: 6.7rem;
+        bottom: -0.6rem; }
+  .card__pricetag {
+    padding: 1rem 2.7rem; }
+  .design__text {
+    font-size: 1.2rem;
+    padding: 0 4rem;
+    line-height: 1.8rem; }
+    .design__text--section {
+      margin-bottom: 1.6rem; }
+  .design__pricetag {
+    bottom: -2.2rem;
+    padding: 1rem 3.9rem; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {
