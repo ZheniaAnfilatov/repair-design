@@ -739,7 +739,8 @@ img {
     padding: 1.8rem 0; }
   .menu {
     justify-content: space-between;
-    padding: 0 1.5rem; }
+    padding-left: 1rem;
+    padding-right: 0.5rem; }
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -759,7 +760,7 @@ img {
       line-height: 1.35; }
     .hero__content {
       margin: 0;
-      padding: 0 0.7rem;
+      padding: 0 0.2rem;
       margin-top: 10.9rem; }
     .hero__text {
       font-size: 1.5rem;
@@ -770,16 +771,18 @@ img {
       width: 100%;
       margin-bottom: 1.85rem;
       font-size: 1.1rem; }
-  .section-title__heading {
-    font-size: 1.8rem; }
+  .section-title {
+    margin-bottom: 2.3rem; }
+    .section-title__heading {
+      font-size: 1.8rem; }
   .card__title {
     font-size: 1.22rem;
     padding-left: 0.6rem; }
   .card__image {
-    padding: 1.5rem; }
+    padding: 1.1rem; }
   .card__text {
-    margin-left: 1.5rem;
-    margin-top: -13.6rem;
+    margin-left: 1.1rem;
+    margin-top: -13.1rem;
     max-width: 22.5rem; }
   .card__list {
     line-height: 1.9rem;
