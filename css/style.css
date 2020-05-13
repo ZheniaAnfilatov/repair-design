@@ -626,6 +626,16 @@ img {
     background-color: #E3B873;
     color: #fff;
     padding: 1.214rem 5.143rem 1.214rem 2.357rem; }
+  .design__image {
+    position: relative; }
+    .design__image::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 97.5%;
+      height: 98%;
+      background-color: rgba(19, 19, 19, 0.3); }
 
 .modal {
   opacity: 0;
