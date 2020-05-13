@@ -41,9 +41,6 @@
   .types
     &__card
       margin-bottom: 5rem
-  .card
-    &__text
-      margin-left: 0
 @media screen and ( max-width: 570px )
   .header
     padding: 1.8rem 0
@@ -119,6 +116,9 @@
     &__pricetag
       bottom: -2.2rem
       padding: 1rem 3.9rem
+    &__image
+      &::before
+        display: none
 @media screen and ( max-height: 560px )
   .hero
     &__scroll-down
