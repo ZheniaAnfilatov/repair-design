@@ -41,6 +41,11 @@
   .types
     &__card
       margin-bottom: 5rem
+  .col
+    &-40
+      width: 90%
+    &-55
+      width: 90%
 @media screen and ( max-width: 570px )
   .header
     padding: 1.8rem 0
@@ -56,6 +61,7 @@
     &__button
       display: none
   .hero
+    max-height: 48rem
     padding: 10px
     justify-content: space-around
     align-items: start
@@ -80,9 +86,13 @@
       margin-bottom: 1.85rem
       font-size: 1.1rem
   .section-title
-    margin-bottom: 2.3rem
+    margin-bottom: 1.7rem
     &__heading
       font-size: 1.8rem
+    &__word
+      margin-bottom: 1.9rem
+      &::after
+        display: none
   .card
     &__title
       font-size: 1.22rem
@@ -102,10 +112,10 @@
         max-height: 12.3rem
         overflow: hidden
         &::before
-          content: '…';
-          position: absolute;
-          left: 6.7rem;
-          bottom: -0.6rem;
+          content: '…'
+          position: absolute
+          left: 6.7rem
+          bottom: -0.6rem
     &__pricetag
           padding: 1rem 2.7rem
   .design
@@ -121,6 +131,37 @@
     &__image
       &::before
         display: none
+  .col
+    &-40
+      width: 96%
+    &-55
+      width: 96%
+  .projects
+    &__row
+      padding-left: 0.36rem
+    &__section
+      &-heading
+        font-size: 1.67rem
+      &-text
+        font-size: 1.17rem
+        margin-right: 4rem
+        margin-bottom: 0
+        line-height: 1.95rem
+  .swiper
+    &-slide
+      margin-bottom: 3.4rem
+      &__text
+        flex-basis: 45%
+        padding-bottom: 0.8rem
+      &__heading
+        font-size: 1.2rem
+        margin-bottom: 0.8rem
+      &__value
+        margin-bottom: 4px
+        font-size: 1.2rem
+    &-img
+      margin-top: 2.8rem
+      height: 160px
 @media screen and ( max-height: 560px )
   .hero
     &__scroll-down

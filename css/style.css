@@ -398,8 +398,11 @@ template {
 .col-30 {
   flex-basis: 31%; }
 
-.col-50 {
-  flex-basis: 50%; }
+.col-55 {
+  width: 55%; }
+
+.col-40 {
+  width: 40%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -418,7 +421,7 @@ img {
   width: 28px; }
 
 .section {
-  padding: 5rem 0; }
+  padding: 7.4rem 0; }
   .section--dark {
     background-color: #131313;
     color: #fff; }
@@ -434,13 +437,14 @@ img {
         color: #E3B873; }
     .section-title__word {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      margin-bottom: 1.6rem; }
       .section-title__word::after {
         content: '';
         width: 90px;
         height: 1.5px;
         background-color: #E3B873;
-        margin-left: 2rem; }
+        margin-left: 2.4rem; }
     .section-title__text {
       font-size: 1.28rem;
       line-height: 2.07rem;
@@ -599,6 +603,66 @@ img {
   .title--primary {
     color: #E3B873;
     letter-spacing: -0.3px; }
+
+.swiper-img {
+  margin-top: 22px; }
+
+.swiper-row {
+  margin-right: 3rem; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5.929rem; }
+  .swiper-slide__text {
+    flex-basis: 38%;
+    padding-bottom: 1.3rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+  .swiper-slide__value {
+    margin: 0;
+    font-size: 1.071rem;
+    margin-bottom: 2px; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
+.projects__row {
+  padding-left: 0.7rem; }
+
+.projects__section-heading {
+  font-size: 1.8rem;
+  line-height: 2.64rem; }
+
+.projects__section-text {
+  margin-bottom: 2.14rem; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -796,7 +860,11 @@ img {
     flex-direction: column;
     align-items: center; }
   .types__card {
-    margin-bottom: 5rem; } }
+    margin-bottom: 5rem; }
+  .col-40 {
+    width: 90%; }
+  .col-55 {
+    width: 90%; } }
 
 @media screen and (max-width: 570px) {
   .header {
@@ -812,6 +880,7 @@ img {
   .contacts__button {
     display: none; }
   .hero {
+    max-height: 48rem;
     padding: 10px;
     justify-content: space-around;
     align-items: start; }
@@ -836,9 +905,13 @@ img {
       margin-bottom: 1.85rem;
       font-size: 1.1rem; }
   .section-title {
-    margin-bottom: 2.3rem; }
+    margin-bottom: 1.7rem; }
     .section-title__heading {
       font-size: 1.8rem; }
+    .section-title__word {
+      margin-bottom: 1.9rem; }
+      .section-title__word::after {
+        display: none; }
   .card__title {
     font-size: 1.22rem;
     padding-left: 0.6rem; }
@@ -873,7 +946,34 @@ img {
     bottom: -2.2rem;
     padding: 1rem 3.9rem; }
   .design__image::before {
-    display: none; } }
+    display: none; }
+  .col-40 {
+    width: 96%; }
+  .col-55 {
+    width: 96%; }
+  .projects__row {
+    padding-left: 0.36rem; }
+  .projects__section-heading {
+    font-size: 1.67rem; }
+  .projects__section-text {
+    font-size: 1.17rem;
+    margin-right: 4rem;
+    margin-bottom: 0;
+    line-height: 1.95rem; }
+  .swiper-slide {
+    margin-bottom: 3.4rem; }
+    .swiper-slide__text {
+      flex-basis: 45%;
+      padding-bottom: 0.8rem; }
+    .swiper-slide__heading {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem; }
+    .swiper-slide__value {
+      margin-bottom: 4px;
+      font-size: 1.2rem; }
+  .swiper-img {
+    margin-top: 2.8rem;
+    height: 160px; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {
