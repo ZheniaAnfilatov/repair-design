@@ -692,6 +692,35 @@ img {
     align-self: flex-end;
     padding: 1.3rem 3.5rem; }
 
+.button-up {
+  display: inline-block;
+  background-color: #E3B873;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s;
+  z-index: 1000;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  visibility: hidden;
+  opacity: 0; }
+  .button-up:hover {
+    cursor: pointer;
+    background-color: #fff; }
+  .button-up:active {
+    background-color: #555; }
+
+.up {
+  width: 40px;
+  transform: rotate(-90deg); }
+
+.show {
+  visibility: visible;
+  opacity: 0.7; }
+
 @media screen and (max-width: 1360px) {
   html {
     font-size: 12px; }
