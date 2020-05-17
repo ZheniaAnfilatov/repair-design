@@ -60,8 +60,9 @@ $(document).ready(function () {
   var mySwiperSteps = new Swiper ('.steps-swiper', {
     loop: true,
     pagination: {
-      el: 'steps__swiper-pagination',
-      type: 'fraction',
+      el: '.steps__swiper-pagination',
+      type: 'bullets',
+
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -69,5 +70,11 @@ $(document).ready(function () {
     },
   })
 
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.steps__swiper-pagination');
+
+  next.css('left', prev.width() + 10 + bullets.width() + 65)
+  bullets.css('left', prev.width() + 40)
 
 });

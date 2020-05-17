@@ -742,12 +742,6 @@ img {
       height: 99.5%;
       background-color: rgba(19, 19, 19, 0.3); }
 
-.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-fraction {
-  width: auto;
-  bottom: 21.64rem;
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.29rem; }
-
 .steps__heading {
   font-family: 'Futura Demi';
   font-style: normal;
