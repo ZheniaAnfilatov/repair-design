@@ -57,4 +57,3 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 40)
 
 });
-
