@@ -404,6 +404,12 @@ template {
 .col-40 {
   width: 40%; }
 
+.col-30 {
+  width: 30%; }
+
+.col-70 {
+  width: 70%; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -735,6 +741,28 @@ img {
       width: 100%;
       height: 99.5%;
       background-color: rgba(19, 19, 19, 0.3); }
+
+.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-fraction {
+  width: auto;
+  bottom: 21.64rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.29rem; }
+
+.steps__heading {
+  font-family: 'Futura Demi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.07rem; }
+
+.steps__swiper-slide-heading {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.07rem;
+  color: #E3B873;
+  font-weight: normal;
+  margin-right: 15rem; }
+
+.steps__swiper-slide-value {
+  margin-right: 7.14rem; }
 
 .modal {
   opacity: 0;

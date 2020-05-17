@@ -36,11 +36,11 @@ $(document).ready(function () {
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, 900);
   });
-
-  var mySwiper = new Swiper ('.swiper-container', {
+  // swiper Projects
+  var mySwiper = new Swiper ('.projects-swiper', {
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.projects__swiper-pagination',
       type: 'bullets',
     },
     navigation: {
@@ -51,9 +51,23 @@ $(document).ready(function () {
 
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
+  var bullets = $('.projects__swiper-pagination');
 
   next.css('left', prev.width() + 10 + bullets.width() + 65)
   bullets.css('left', prev.width() + 40)
+
+  // swiper Steps
+  var mySwiperSteps = new Swiper ('.steps-swiper', {
+    loop: true,
+    pagination: {
+      el: 'steps__swiper-pagination',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+
 
 });
