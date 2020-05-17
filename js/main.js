@@ -53,8 +53,8 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.projects__swiper-pagination');
 
-  next.css('left', prev.width() + 10 + bullets.width() + 65)
-  bullets.css('left', prev.width() + 40)
+  next.css('left', prev.width() + 10 + bullets.width() + 35)
+  bullets.css('left', prev.width() + 25)
 
   // swiper Steps
   var mySwiperSteps = new Swiper ('.steps-swiper', {
@@ -74,7 +74,30 @@ $(document).ready(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.steps__swiper-pagination');
 
-  next.css('left', prev.width() + 10 + bullets.width() + 65)
-  bullets.css('left', prev.width() + 40)
+  // next.css('left', prev.width() + 10 + bullets.width() + 18)
+  bullets.css('left', prev.width() + 10)
+
+
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    virtualTranslate: true,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+
+
 
 });

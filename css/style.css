@@ -404,11 +404,11 @@ template {
 .col-40 {
   width: 40%; }
 
-.col-30 {
+.col-29 {
   width: 30%; }
 
 .col-70 {
-  width: 70%; }
+  width: 61.6%; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -618,8 +618,7 @@ img {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 5.929rem; }
+  flex-wrap: wrap; }
   .swiper-slide__text {
     flex-basis: 38%;
     padding-bottom: 1.3rem; }
@@ -669,6 +668,12 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 9px; }
+
+.swiper-slide__value-down {
+  margin-bottom: 6.07rem; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -748,15 +753,55 @@ img {
   font-weight: 500;
   font-size: 1.07rem; }
 
-.steps__swiper-slide-heading {
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.07rem;
-  color: #E3B873;
-  font-weight: normal;
-  margin-right: 15rem; }
+.steps__swiper-slide {
+  width: 54.64rem;
+  height: 26.9rem; }
+  .steps__swiper-slide-heading {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.07rem;
+    color: #E3B873;
+    font-weight: normal;
+    margin-right: 15rem; }
+  .steps__swiper-slide-value {
+    margin-right: 7.14rem; }
 
-.steps__swiper-slide-value {
-  margin-right: 7.14rem; }
+.steps__swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5.71rem; }
+
+.number {
+  border-bottom: 1.3px solid #E3B873;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.07rem; }
+
+.slide-info {
+  line-height: 1.29rem; }
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center; }
+  .swiper-slide__info {
+    cursor: pointer;
+    width: 68%; }
+
+.gallery-top {
+  height: 80%;
+  width: 100%; }
+
+.gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0; }
+
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4; }
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1; }
 
 .modal {
   opacity: 0;
