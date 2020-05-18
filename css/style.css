@@ -568,6 +568,9 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff; }
+    .hero__scroll-down:hover {
+      text-decoration: underline;
+      color: #E3B873; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -591,6 +594,9 @@ img {
     transform: rotate(90deg);
     font-size: 1.06rem;
     margin-bottom: 1.7rem; }
+    .instagram__link:hover {
+      text-decoration: underline;
+      font-size: 1.1rem; }
     .instagram__link::after {
       content: '';
       width: 50px;
