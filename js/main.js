@@ -114,6 +114,8 @@ $(document).ready(function () {
   
   // валидацция формы модального окна
   $('.modal__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
     rules: {
       userName: {
         required: true,
@@ -146,6 +148,8 @@ $(document).ready(function () {
 
     // валидацция формы footer
   $('.footer__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
     rules: {
       userName: {
         required: true,
@@ -170,6 +174,8 @@ $(document).ready(function () {
 
   // валидацция формы control
   $('.control__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
     rules: {
       userName: {
         required: true,

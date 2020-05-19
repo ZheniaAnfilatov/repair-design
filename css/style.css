@@ -389,6 +389,9 @@ template {
     justify-content: center;
     font-size: 1.1rem; }
 
+input.invalid {
+  border-bottom: 1px solid red; }
+
 .container {
   width: 97%;
   max-width: 1256px;
