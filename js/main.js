@@ -115,14 +115,15 @@ $(document).ready(function () {
   // валидацция формы модального окна
   $('.modal__form').validate({
     rules: {
-      // строчное правило
       userName: {
         required: true,
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
-      // правило объект (блок)
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
       userEmail: {
         required: true,
         email: true
@@ -132,8 +133,8 @@ $(document).ready(function () {
     messages: {
       userName: {
         required: "Заполните поле",
-        minlength: "Имя не короче 2 символов и не больше 15",
-        maxlength: "Имя не короче 2 символов и не больше 15"
+        minlength: "Не меньше 2 символов",
+        maxlength: "Не больше 15 символов"
       },
       userPhone: "Заполните поле",
       userEmail: {
@@ -190,7 +191,7 @@ $(document).ready(function () {
 
   // маска для телефона
 
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (000) 000-00-00"});
+  $('[type=tel]').mask('+7(000) 000-00-00');
 
 
 });
