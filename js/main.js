@@ -112,7 +112,85 @@ $(document).ready(function () {
 
 
   
-  // валидацция
+  // валидацция формы модального окна
+  $('.modal__form').validate({
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // правило объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+     // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 символов и не больше 15",
+        maxlength: "Имя не короче 2 символов и не больше 15"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+  });
+
+    // валидацция формы footer
+  $('.footer__form').validate({
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userQuestion: "required"
+
+    }, 
+    // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 символов и не больше 15",
+        maxlength: "Имя не короче 2 символов и не больше 15"
+      },
+      userPhone: "Заполните поле",
+      userQuestion: "Заполните поле"
+    }
+  });
+
+  // валидацция формы control
+  $('.control__form').validate({
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required"
+    }, 
+    // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 символов и не больше 15",
+        maxlength: "Имя не короче 2 символов и не больше 15"
+      },
+      userPhone: "Заполните поле"
+    }
+  });
+
+  // маска для телефона
+
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (000) 000-00-00"});
 
 
 });
