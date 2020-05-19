@@ -1,27 +1,33 @@
 $(document).ready(function () {
+  // модальное окно
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
+  // модальное окно
 
-
+  // появление окна
   modalBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   })
+
+  // закрывание на крестик
   closeBtn.on('click', function () {
     modal.toggleClass('modal--visible');
   });
 
+  // закрывание на esc
   $(document).keydown(function(e) {        
     if (e.keyCode == 27) {
       modal.removeClass('modal--visible');
     }
   });
+  // закрывание на клик
   $(document).click(function (e) {
     if ($(e.target).is (modal)) {
       modal.toggleClass('modal--visible');
     }
   });
-
+  // кнопка наверх
   var btn = $('.button-up');
 
   $(window).scroll(function() {
@@ -36,6 +42,8 @@ $(document).ready(function () {
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, 900);
   });
+
+
   // swiper Projects
   var mySwiper = new Swiper ('.projects-swiper', {
     loop: true,
@@ -56,7 +64,7 @@ $(document).ready(function () {
   next.css('left', prev.width() + 10 + bullets.width() + 35)
   bullets.css('left', prev.width() + 25)
 
-  // swiper Steps
+  // swiper Steps 1
   var mySwiperSteps = new Swiper ('.steps-swiper', {
     loop: true,
     pagination: {
@@ -77,7 +85,7 @@ $(document).ready(function () {
   // next.css('left', prev.width() + 10 + bullets.width() + 18)
   bullets.css('left', prev.width() + 10)
 
-
+  // swiper Steps 2
   var galleryThumbs = new Swiper('.gallery-thumbs', {
     spaceBetween: 10,
     slidesPerView: 4,
@@ -98,6 +106,9 @@ $(document).ready(function () {
     }
   });
 
+
+  // анимация
+  new WOW().init();
 
 
 });
