@@ -987,6 +987,9 @@ img {
     margin-bottom: 3.1rem; }
   .footer__icon {
     margin-right: 1rem; }
+  .footer__address {
+    display: flex;
+    flex-direction: column; }
 
 .modal {
   opacity: 0;
@@ -1292,7 +1295,36 @@ img {
     margin-top: 2.8rem;
     height: 160px; }
   .steps {
-    display: none; } }
+    display: none; }
+  .footer__menu {
+    display: none; }
+  .footer__text {
+    order: 5; }
+  .footer__title {
+    font-size: 1.65rem;
+    margin-bottom: 4.5rem; }
+  .footer__input {
+    font-size: 1.5rem; }
+    .footer__input--down {
+      margin-bottom: 0; }
+    .footer__input-group {
+      flex-basis: 100%;
+      margin-bottom: 5.5rem; }
+  .footer__wrap {
+    padding: 1rem;
+    margin-bottom: 2.9rem; }
+  .footer__policy {
+    margin-top: -3.6rem;
+    flex-basis: 79%;
+    margin-bottom: 5.6rem; }
+    .footer__policy-label {
+      font-size: 1.35rem; }
+  .footer__button {
+    padding: 1.4rem 11.1rem;
+    font-size: 1.2rem; }
+  .footer__map {
+    padding-left: 1rem;
+    max-width: 29.4rem; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {
