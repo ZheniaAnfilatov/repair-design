@@ -969,9 +969,12 @@ img {
     background-color: #131313;
     padding: 3.3rem 0; }
   .footer__map {
-    padding-bottom: 5rem;
+    background: url(../img/map.png);
+    margin-bottom: 4.7rem;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    height: 33.21rem;
+    width: 66rem; }
   .footer__section-title {
     position: relative;
     max-width: 39rem;
@@ -989,7 +992,8 @@ img {
     margin-right: 1rem; }
   .footer__address {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
 
 .modal {
   opacity: 0;
@@ -1122,7 +1126,10 @@ img {
     background-color: #E3B873;
     color: #fff; }
   .button--outline:hover {
-    text-decoration: none; } }
+    text-decoration: none; }
+  .footer__map {
+    max-width: 44rem;
+    max-height: 22rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1299,10 +1306,12 @@ img {
   .footer__menu {
     display: none; }
   .footer__text {
-    order: 5; }
+    order: 5;
+    padding: 0 1.2rem; }
   .footer__title {
-    font-size: 1.65rem;
-    margin-bottom: 4.5rem; }
+    font-size: 1.5rem;
+    margin-bottom: 4.5rem;
+    line-height: 1.95rem; }
   .footer__input {
     font-size: 1.5rem; }
     .footer__input--down {
@@ -1320,11 +1329,18 @@ img {
     .footer__policy-label {
       font-size: 1.35rem; }
   .footer__button {
-    padding: 1.4rem 11.1rem;
+    width: 100%;
+    padding: 1.4rem 4.37rem;
     font-size: 1.2rem; }
   .footer__map {
-    padding-left: 1rem;
-    max-width: 29.4rem; } }
+    max-width: 28.5rem;
+    max-height: 21.1rem;
+    margin-bottom: 3.6rem; }
+  .footer__icon {
+    height: 3.5rem;
+    margin-top: -2.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {

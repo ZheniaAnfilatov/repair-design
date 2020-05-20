@@ -51,6 +51,9 @@
     &--outline
       &:hover
         text-decoration: none
+  .footer__map
+    max-width: 44rem
+    max-height: 22rem
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -229,9 +232,11 @@
       display: none
     &__text
       order: 5
+      padding: 0 1.2rem
     &__title
-      font-size: 1.65rem
+      font-size: 1.5rem
       margin-bottom: 4.5rem
+      line-height: 1.95rem
     &__input
       font-size: 1.5rem
       &--down
@@ -249,11 +254,18 @@
       &-label
         font-size: 1.35rem
     &__button
-      padding: 1.4rem 11.1rem
+      width: 100%
+      padding: 1.4rem 4.37rem
       font-size: 1.2rem
     &__map
-      padding-left: 1rem
-      max-width: 29.4rem
+      max-width: 28.5rem
+      max-height: 21.1rem
+      margin-bottom: 3.6rem
+    &__icon
+      height: 3.5rem
+      margin-top: -2.5rem
+      margin-right: 1rem
+      margin-left: 1rem
 @media screen and ( max-height: 560px )
   .hero
     &__scroll-down
