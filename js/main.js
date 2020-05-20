@@ -108,8 +108,26 @@ $(document).ready(function () {
 
 
   // анимация
-  new WOW().init();
-
+  var anime = $('.animated'),
+        win = $(window),
+        windowHeight = win.height();
+    win.scroll(function () {
+        var scrollPos = $(this).scrollTop(),
+            animePos = anime.offset().top;
+        if (scrollPos >= animePos - windowHeight/1) {
+            anime.addClass('form-fly-up');
+        }    
+    });
+  var cartoon = $('.animated-down'),
+        win = $(window),
+        windowHeight = win.height();
+    win.scroll(function () {
+        var scrollPos = $(this).scrollTop(),
+            cartoonPos = cartoon.offset().top;
+        if (scrollPos >= cartoonPos - windowHeight/1) {
+            cartoon.addClass('form-fly-up');
+        }    
+    });
 
   
   // валидацция формы модального окна

@@ -19,3 +19,37 @@
     width: 30%
   &-70
     width: 61.6%
+
+@keyframes slideTop
+  from
+    padding-bottom: 0
+  to
+    padding-bottom: 10px
+@keyframes slideRight
+  from
+    left: 50%
+  to
+    left: 0
+@keyframes form-fly-up 
+   0% { transform: translateY(500px) }
+   50% { transform: translateY(-50px) }
+   100% { transform: translateY(0) }
+
+// .card-animation
+//   &-1
+//     animation: form-fly-up 1s
+//   &-2
+//     animation: form-fly-up 1.2s
+//   &-3
+//     animation: form-fly-up 1.4s
+
+.animated
+  animation-duration: 1.5s
+.animated-1
+  animation-duration: 1.7s
+.animated-2
+  animation-duration: 1.9s
+
+
+.form-fly-up
+  animation-name: form-fly-up
