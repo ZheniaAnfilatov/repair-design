@@ -14,7 +14,8 @@ $mail = new PHPMailer\PHPMailer\PHPMailer();
 
 try {
     //Server settings
-    $mail->SMTPDebug = 4;                      // Enable verbose debug output
+    $mail->SMTPDebug = 0;                      // Enable verbose debug output
+    $mail->CharSet = 'UTF-8';
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.mail.ru';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
