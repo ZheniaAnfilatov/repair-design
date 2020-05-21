@@ -853,9 +853,8 @@ img {
       background-color: rgba(19, 19, 19, 0.3); }
 
 .steps {
-  margin-bottom: 20rem;
   padding-top: 10rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 30rem; }
   .steps__heading {
     font-family: 'Futura Demi';
     font-style: normal;
@@ -913,6 +912,79 @@ img {
 
 .gallery-thumbs .swiper-slide-thumb-active {
   opacity: 1; }
+
+.teams {
+  margin-top: -20rem;
+  margin-bottom: 10rem; }
+  .teams__row {
+    justify-content: center; }
+  .teams__text {
+    margin-bottom: 7rem;
+    padding-bottom: 10rem; }
+    .teams__text--section {
+      margin-bottom: 6rem;
+      margin-top: 1rem;
+      max-width: 32rem;
+      color: #fff; }
+  .teams__col-32 {
+    text-align: center;
+    flex-basis: 30%; }
+  .teams__card {
+    position: relative; }
+    .teams__card-title {
+      padding-top: 1.8rem;
+      margin-bottom: 0.6rem; }
+    .teams__card-text {
+      position: relative;
+      background-color: #fff;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+      max-width: 16.64rem;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: -6.2rem; }
+    .teams__card--section {
+      margin-bottom: 10rem; }
+  .teams__profession {
+    padding-bottom: 1.6rem;
+    margin: 0;
+    font-size: 1.3rem; }
+  .teams__icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #E3B873;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18px;
+    margin-top: -35px; }
+  .teams__pricetag {
+    background-color: #E3B873;
+    color: #fff;
+    padding: 1rem 1.7rem;
+    margin: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive; }
+  .teams__content {
+    margin-top: 3.786rem;
+    max-width: 40rem;
+    margin: auto;
+    margin-bottom: 4.285rem;
+    text-align: center;
+    font-size: 1.428rem;
+    line-height: 2.43rem; }
+    .teams__content::before {
+      content: '';
+      display: block;
+      margin: auto;
+      margin-top: 3.9rem;
+      margin-bottom: 0.6rem;
+      width: 55px;
+      height: 2px;
+      background-color: #E3B873;
+      border-radius: 30px; }
 
 .footer {
   position: relative;
@@ -1086,7 +1158,14 @@ img {
   .logo {
     margin-left: 4rem; }
   .hero__content {
-    margin-left: 2.5rem; } }
+    margin-left: 2.5rem; }
+  .teams__row {
+    flex-direction: column;
+    align-items: center; }
+  .teams__col-32 {
+    margin-bottom: 4rem; }
+  .teams__icon {
+    margin-left: -35px; } }
 
 @media screen and (max-width: 1200px) {
   .nav {

@@ -573,6 +573,93 @@
       <!-- /.container -->
     </div>
     <!-- /.section section--dark steps -->
+    <section class="section teams">
+      <div class="container">
+        <div class="section-title teams__section-title section-title--light">
+          <h2 class="section-title__heading">Наша команда</h2>
+          <!-- /.section-title__heading -->
+          <div class="section-title__image">
+            <img src="img/team-icon.svg" alt="teams">
+          </div>
+          <!-- /.section-title__image -->
+        </div>
+        <!-- /.section-title -->
+        <p class="design__text teams__text--section">
+          Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться
+        </p>
+        <div class="row teams__row">
+          <div class="col-32 teams__col-32">
+            <div class="card teams__card wow fadeInUp" data-wow-delay="0.6s">
+              <div class="teams__idea">
+                <div class="teams__icon"><img src="img/idea-1.png" alt="idea"></div>
+                <div class="teams__image"><img src="img/foto/team-1.png" alt="Минимальный" class="card__image"></div>
+              </div>
+              <div class="teams__card-text">
+                <h3 class="card__title teams__card-title">Алексей Колмаков</h3>
+                <!-- /.card__title -->
+                <p class="teams__profession">Проектный менеджер</p>
+                <!-- /.card__list -->
+                <p class="teams__pricetag">
+                  Опыт работы 8 лет
+                </p>
+                <!-- /.card__pricetag -->
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-32 teams__col-32">
+            <div class="card teams__card wow fadeInUp" data-wow-delay="0.4s">
+              <div class="teams__idea">
+                <div class="teams__icon"><img src="img/idea-2.png" alt="idea"></div>
+                <div class="teams__image"><img src="img/foto/team-2.png" alt="Минимальный" class="card__image"></div>
+              </div>
+              <div class="teams__card-text">
+                <h3 class="card__title teams__card-title">Алиса Сухорукова</h3>
+                <!-- /.card__title -->
+                <p class="teams__profession">Дизайнер</p>
+                <!-- /.card__list -->
+                <p class="teams__pricetag">
+                  Опыт работы 6 лет
+                </p>
+                <!-- /.card__pricetag -->
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-32 teams__col-32">
+            <div class="card teams__card wow fadeInUp" data-wow-delay="0.2s">
+              <div class="teams__idea">
+                <div class="teams__icon"><img src="img/idea-3.png" alt="idea"></div>
+                <div class="teams__image"><img src="img/foto/team-3.png" alt="Минимальный" class="card__image"></div>
+              </div>
+              <div class="teams__card-text">
+                <h3 class="card__title teams__card-title">Давид Волынев</h3>
+                <!-- /.card__title -->
+                <p class="teams__profession">Бригадир</p>
+                <!-- /.card__list -->
+                <p class="teams__pricetag">
+                  Опыт работы 7 лет
+                </p>
+                <!-- /.card__pricetag -->
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <p class="teams__content">
+          Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.
+        </p>
+      </div>
+      <!-- container -->
+    </section>
+    <!-- section teams -->
   </main>
   <footer class="footer section--dark">
     <div class="container">
@@ -647,7 +734,7 @@
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
-      <form action="#" class="form modal__form">
+      <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
           <label for="user-name" class="label form__label label--light">Имя</label>
           <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
