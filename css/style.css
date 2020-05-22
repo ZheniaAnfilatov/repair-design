@@ -392,6 +392,10 @@ template {
 input.invalid {
   border-bottom: 1px solid red; }
 
+div.invalid {
+  position: absolute;
+  margin-top: 45px; }
+
 .container {
   width: 97%;
   max-width: 1256px;
@@ -1157,6 +1161,7 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input-group {
+    position: relative;
     margin-bottom: 3.2rem;
     display: flex;
     flex-direction: column; }
