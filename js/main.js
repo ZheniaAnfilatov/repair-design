@@ -73,17 +73,17 @@ $(document).ready(function () {
 
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.steps__swiper-button-next',
+      prevEl: '.steps__swiper-button-prev',
     },
   })
 
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.steps__swiper-pagination');
+  var stepsNext = $('.steps__swiper-button-next');
+  var stepsPrev = $('.steps__swiper-button-prev');
+  var stepsBullets = $('.steps__swiper-pagination');
 
-  // next.css('left', prev.width() + 10 + bullets.width() + 18)
-  bullets.css('left', prev.width() + 10)
+  stepsNext.css('left', stepsPrev.width() + 10 + stepsBullets.width() + 18)
+  stepsBullets.css('left', stepsPrev.width() + 10)
 
   // swiper Steps 2
   var galleryThumbs = new Swiper('.gallery-thumbs', {
@@ -104,8 +104,8 @@ $(document).ready(function () {
 
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.steps__swiper-button-next',
+      prevEl: '.steps__swiper-button-prev',
     },
     thumbs: {
       swiper: galleryThumbs
