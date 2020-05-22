@@ -94,9 +94,15 @@ $(document).ready(function () {
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
   });
+  var bullets2 = $('.steps__swiper-pagination2');
   var galleryTop = new Swiper('.gallery-top', {
     spaceBetween: 10,
     loop: true,
+    pagination: {
+      el: '.steps__swiper-pagination2',
+      type: 'fraction',
+
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -104,6 +110,7 @@ $(document).ready(function () {
     thumbs: {
       swiper: galleryThumbs
     }
+    
   });
 
 

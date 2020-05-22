@@ -933,6 +933,8 @@ img {
   .teams__col-32 {
     text-align: center;
     flex-basis: 30%; }
+  .teams__idea {
+    position: relative; }
   .teams__card {
     position: relative; }
     .teams__card-title {
@@ -992,6 +994,8 @@ img {
 
 .customers {
   padding-bottom: 30rem; }
+  .customers__row {
+    margin-left: 0.786rem; }
   .customers__col {
     flex-basis: 31%; }
   .customers__text--section {
@@ -1000,7 +1004,7 @@ img {
   .customers__card {
     margin: 0;
     max-width: 30rem;
-    padding: 1.79rem 2.14rem 3.79rem 2.14rem; }
+    padding: 1.79rem 2.14rem 3.79rem 1.4rem; }
   .customers__name {
     display: flex;
     align-items: center;
@@ -1212,6 +1216,8 @@ img {
   .teams__row {
     flex-direction: column;
     align-items: center; }
+  .teams__icon {
+    margin-left: 80px; }
   .teams__col-32 {
     margin-bottom: 4rem; }
   .teams__icon {
@@ -1469,7 +1475,35 @@ img {
     height: 3.5rem;
     margin-top: -2.5rem;
     margin-right: 1rem;
-    margin-left: 1rem; } }
+    margin-left: 1rem; }
+  .teams {
+    margin-top: 0rem; }
+    .teams__card {
+      max-height: 32.5rem; }
+      .teams__card-text {
+        margin-top: -8.2rem;
+        max-width: 20rem; }
+      .teams__card-title {
+        font-size: 1.45rem; }
+    .teams__profession {
+      font-size: 1.45rem;
+      padding-bottom: 2.1rem; }
+    .teams__pricetag {
+      font-size: 1.1rem;
+      padding: 1.2rem 1.7rem; }
+    .teams__col-32 {
+      width: 95%;
+      text-align: end;
+      margin-bottom: 9.3rem; }
+    .teams__text--section {
+      margin-bottom: 3.8rem; }
+    .teams__icon {
+      margin-left: 25px;
+      margin-top: -20px; }
+    .teams__content {
+      display: none; }
+  .customers {
+    display: none; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {
