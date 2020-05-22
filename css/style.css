@@ -986,6 +986,51 @@ img {
       background-color: #E3B873;
       border-radius: 30px; }
 
+.customers {
+  padding-bottom: 10rem; }
+  .customers__col {
+    flex-basis: 31%; }
+  .customers__text--section {
+    margin-bottom: 3.2rem;
+    max-width: 23rem; }
+  .customers__card {
+    margin: 0;
+    max-width: 30rem;
+    padding: 1.79rem 2.14rem 3.79rem 2.14rem; }
+  .customers__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; }
+  .customers__img {
+    border-radius: 50%; }
+  .customers__card-title {
+    margin-top: 9px;
+    max-width: 14rem;
+    margin-left: 1.64rem; }
+  .customers__time {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: -2rem; }
+    .customers__time--icon {
+      margin-right: 15px; }
+  .customers__pricetag {
+    padding: 0.214rem 1.4rem;
+    font-size: 1.1rem;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: #E3B873;
+    color: #fff;
+    display: flex;
+    align-items: center; }
+    .customers__pricetag--right {
+      margin-left: 1px; }
+  .customers__review {
+    font-size: 1.07rem;
+    max-width: 23.1rem;
+    line-height: 1.93rem; }
+
 .footer {
   position: relative;
   background: #131313 url("../img/footer-bg.png") no-repeat center/cover; }
