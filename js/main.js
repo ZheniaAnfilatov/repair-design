@@ -113,6 +113,33 @@ $(document).ready(function () {
     
   });
 
+    // // swiper fantasies
+    // var galleryThumbs = new Swiper('.gallery-thumbs', {
+    //   spaceBetween: 10,
+    //   slidesPerView: 4,
+    //   virtualTranslate: true,
+    //   freeMode: true,
+    //   watchSlidesVisibility: true,
+    //   watchSlidesProgress: true,
+    // });
+    // var bullets = $('.steps__swiper-pagination2');
+    // var galleryTop = new Swiper('.gallery-top', {
+    //   spaceBetween: 10,
+    //   loop: true,
+    //   pagination: {
+    //     el: '.steps__swiper-pagination2',
+    //     type: 'fraction',
+  
+    //   },
+    //   navigation: {
+    //     nextEl: '.steps__swiper-button-next',
+    //     prevEl: '.steps__swiper-button-prev',
+    //   },
+    //   thumbs: {
+    //     swiper: galleryThumbs
+    //   }
+      
+    // });
 
 
 
