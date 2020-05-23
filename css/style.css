@@ -697,10 +697,18 @@ img {
   bottom: 0; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 9px; }
+  margin: 0px 9px;
+  width: 9px;
+  height: 9px; }
 
 .swiper-slide__value-down {
   margin-bottom: 6.07rem; }
+
+.swiper-pagination-current {
+  margin-right: -3px; }
+
+.swiper-pagination-total {
+  margin-left: -3px; }
 
 .control {
   padding-top: 5.5rem;
@@ -943,27 +951,49 @@ img {
 .steps {
   padding-top: 10rem;
   padding-bottom: 30rem; }
+  .steps__section-heading {
+    font-size: 1.9rem;
+    margin-top: 1.14rem;
+    margin-bottom: 9.5rem; }
   .steps__heading {
     font-family: 'Futura Demi';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.07rem; }
+    font-size: 1.08rem;
+    text-transform: uppercase; }
   .steps__swiper-slide {
     width: 54.64rem;
-    height: 26.9rem; }
+    height: 25.3rem; }
     .steps__swiper-slide-heading {
       font-family: 'Yeseva One', cursive;
       font-size: 1.07rem;
       color: #E3B873;
       font-weight: normal;
-      margin-right: 15rem; }
+      text-transform: uppercase;
+      line-height: 1.357rem;
+      margin: 0;
+      max-width: 13rem; }
     .steps__swiper-slide-value {
-      margin-right: 7.14rem; }
+      margin-top: -10px;
+      font-size: 1.08rem;
+      line-height: 1.8rem;
+      max-height: 100px;
+      margin-bottom: 0; }
+      .steps__swiper-slide-value--down {
+        max-width: 21.43rem;
+        margin-bottom: 65px; }
   .steps__swiper-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 5.71rem; }
+  .steps__swiper-pagination2 {
+    left: -502px;
+    top: 10px;
+    width: 10%;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.286rem;
+    font-size: 1.2rem; }
   .steps__swiper-object {
     position: relative; }
 
@@ -985,6 +1015,20 @@ img {
 .col-70__swiper-wrapper {
   flex-wrap: wrap;
   justify-content: space-between; }
+
+.col-29 {
+  margin-left: 7px; }
+
+.section-title__steps {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6rem; }
+  .section-title__steps::after {
+    content: '';
+    width: 90px;
+    height: 1.5px;
+    background-color: #E3B873;
+    margin-left: 6.4rem; }
 
 .gallery-top {
   height: 80%;

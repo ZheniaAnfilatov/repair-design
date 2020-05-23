@@ -82,8 +82,8 @@ $(document).ready(function () {
   var stepsPrev = $('.steps__swiper-button-prev');
   var stepsBullets = $('.steps__swiper-pagination');
 
-  stepsNext.css('left', stepsPrev.width() + 10 + stepsBullets.width() + 18)
-  stepsBullets.css('left', stepsPrev.width() + 10)
+  stepsNext.css('left', stepsPrev.width() + 10 + stepsBullets.width() + 30)
+  stepsBullets.css('left', stepsPrev.width() + 20)
 
   // swiper Steps 2
   var galleryThumbs = new Swiper('.gallery-thumbs', {
