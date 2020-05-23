@@ -114,6 +114,8 @@ $(document).ready(function () {
   });
 
 
+
+
   // анимация
   new WOW().init();
 
@@ -139,6 +141,40 @@ $(document).ready(function () {
       }
     },
      // сообщения
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Не меньше 2 символов",
+        maxlength: "Не больше 15 символов"
+      },
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+  });
+
+  // валидацция формы модального окна
+  $('.economy__form').validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+      // сообщения
     messages: {
       userName: {
         required: "Заполните поле",

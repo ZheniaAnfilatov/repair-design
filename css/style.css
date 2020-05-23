@@ -394,7 +394,7 @@ input.invalid {
 
 div.invalid {
   position: absolute;
-  margin-top: 45px; }
+  margin-top: 50px; }
 
 .container {
   width: 97%;
@@ -820,6 +820,90 @@ img {
   color: #fff;
   padding: 1.214rem 2.6rem; }
 
+.economy {
+  padding-top: 10rem;
+  padding-bottom: 20rem; }
+  .economy__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .economy__scheme {
+    position: absolute;
+    width: 100%; }
+  .economy__circle {
+    position: absolute;
+    left: 0;
+    top: 60px; }
+  .economy__discont {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .economy__text {
+    font-weight: 700;
+    font-size: 1.429rem;
+    max-width: 21rem;
+    color: #E3B873; }
+  .economy__icon {
+    width: 72px;
+    height: 72px;
+    background-color: #E3B873;
+    box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1rem; }
+  .economy__paragraph {
+    position: absolute;
+    display: flex;
+    align-items: center; }
+    .economy__paragraph--first {
+      top: 97px;
+      left: 360px; }
+    .economy__paragraph--second {
+      left: 430px;
+      top: 217px; }
+    .economy__paragraph--third {
+      left: 450px;
+      top: 377px; }
+    .economy__paragraph--fourth {
+      left: 376px;
+      top: 539px; }
+    .economy__paragraph--number {
+      font-family: 'Yeseva One', cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.29rem;
+      color: #fff;
+      width: 42px;
+      height: 42px;
+      background-color: #E3B873;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%; }
+    .economy__paragraph--text {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.29rem;
+      line-height: 1.5rem;
+      max-width: 26rem;
+      margin-left: 1.14rem; }
+  .economy__form {
+    display: flex;
+    flex-direction: column; }
+  .economy__input-group {
+    position: relative;
+    margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: column; }
+  .economy__policy {
+    margin-bottom: 2.7rem;
+    margin-top: -1.95rem;
+    font-size: 1.15rem; }
+
 .design {
   padding-bottom: 10rem; }
   .design__row {
@@ -880,6 +964,8 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 5.71rem; }
+  .steps__swiper-object {
+    position: relative; }
 
 .number {
   border-bottom: 1.3px solid #E3B873;
