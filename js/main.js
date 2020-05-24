@@ -57,8 +57,8 @@ $(document).ready(function () {
     },
   })
 
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
+  var next = $('.projects__swiper-button-next');
+  var prev = $('.projects__swiper-button-prev');
   var bullets = $('.projects__swiper-pagination');
 
   next.css('left', prev.width() + 10 + bullets.width() + 35)
@@ -113,6 +113,19 @@ $(document).ready(function () {
     
   });
 
+  // swiper Fantasies
+  var mySwiper = new Swiper ('.fantasies-swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.fantasies__swiper-button-next',
+      prevEl: '.fantasies__swiper-button-prev',
+    },
+  })
+
+  var fantasiesNext = $('.fantasies__swiper-button-next');
+  var fantasiesPrev = $('.fantasies__swiper-button-prev');
+
+  fantasiesNext.css('center', fantasiesPrev.width() + 10)
 
   // анимация
   new WOW().init();

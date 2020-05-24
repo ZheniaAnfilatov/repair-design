@@ -10,6 +10,10 @@
     &__swiper
       &-pagination2
         top: 165px
+  .fantasies
+    &__img
+      max-width: 50%
+      top: -125px
 @media screen and ( max-width: 1200px )
   .nav
     margin-left: 4rem
@@ -54,6 +58,13 @@
       width: 76%
       &--2, &--3
         margin: 0
+  .fantasies
+    &__img
+      max-width: 53%
+      top: -80px
+      right: 60px
+    &__link
+      margin-bottom: 1rem
 @media screen and ( max-width: 992px )
   .hero
     padding-left: 4rem
@@ -110,6 +121,13 @@
     display: none
   .steps
     display: none
+  .fantasies
+    &__img
+      top: 50px
+      right: 20px
+      width: 470px
+    &__section-heading
+      font-size: 1.6rem
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -131,6 +149,25 @@
       display: none
     &__text
       order: 5
+  .fantasies
+    background: none
+    &::before
+      display: none
+    &__img
+      display: none
+    &__section-heading
+      margin: 0 auto 30px
+      text-align: center
+      padding-top: 5.5rem
+      max-width: 29.36rem
+      font-size: 1.84rem
+    &-swiper
+      opacity: 1
+      visibility: visible
+      &__slide
+        justify-content: center
+        height: 350px
+        overflow: hidden
 @media screen and ( max-width: 570px )
   .header
     padding: 1.8rem 0
@@ -356,6 +393,9 @@
         margin-bottom: 3.8rem
     &__content
       display: none
+  .fantasies-swiper
+    &__slide
+    height: 242px
 @media screen and ( max-height: 560px )
   .hero
     &__scroll-down

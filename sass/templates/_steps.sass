@@ -35,6 +35,20 @@
         max-width: 21.43rem
         margin-bottom: 65px
   &__swiper
+    &-button
+      &-prev, &-next
+        bottom: 0
+        top: auto
+        background-size: 42px
+        width: 42px
+        height: 14px
+        &::after
+          display: none
+      &-prev
+        left: 0
+        background: url('../img/arrow-prev.svg') no-repeat center
+      &-next
+        background: url('../img/arrow-next.svg') no-repeat center
     &-wrapper
       display: flex
       flex-wrap: wrap
