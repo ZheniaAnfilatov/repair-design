@@ -6,16 +6,6 @@
   .hero
     &__content
       margin-left: 2.5rem
-  .teams
-    &__row
-      flex-direction: column
-      align-items: center
-    &__icon
-      margin-left: 80px
-    &__col-32
-      margin-bottom: 4rem
-    &__icon
-      margin-left: -35px
 @media screen and ( max-width: 1200px )
   .nav
     margin-left: 4rem
@@ -24,6 +14,9 @@
   .contacts
     &__phone
       margin-left: 2rem
+  .teams
+    &__col-32
+      flex-basis: 34%
 @media screen and ( max-width: 992px )
   .hero
     padding-left: 4rem
@@ -70,6 +63,12 @@
     &__pricetag
       padding: 0.214rem 0.7rem
       font-size: 1rem
+  .teams
+    &__col-32
+      flex-basis: 45%
+      margin-bottom: 4.64rem
+    &__row
+      flex-wrap: wrap
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -217,7 +216,7 @@
         &--down
           margin-top: 5.3rem
     &__policy
-      flex-basis: 78%;
+      flex-basis: 78%
       margin-top: 2.3rem
       margin-bottom: 5.5rem
       font-size: 1.36rem
@@ -292,14 +291,20 @@
       margin-left: 1rem
   .teams
     margin-top: 0rem
+    &__image
+      width: 304px
     &__card
       &-image
-      max-height: 32.5rem
+        padding: 0
       &-text
-        margin-top: -8.2rem
+        margin-top: -6.7rem
         max-width: 20rem
       &-title
         font-size: 1.45rem
+    &__idea
+      justify-content: flex-end
+    &__icon
+      margin-left: -269px
     &__profession
       font-size: 1.45rem
       padding-bottom: 2.1rem
@@ -307,15 +312,11 @@
       font-size: 1.1rem
       padding: 1.2rem 1.7rem
     &__col-32
-      width: 95%
-      text-align: end
+      width: 93%
       margin-bottom: 9.3rem
     &__text
       &--section
         margin-bottom: 3.8rem
-    &__icon
-      margin-left: 25px
-      margin-top: -20px
     &__content
       display: none
 @media screen and ( max-height: 560px )

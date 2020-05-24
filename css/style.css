@@ -1133,9 +1133,19 @@ img {
     text-align: center;
     flex-basis: 30%; }
   .teams__idea {
-    position: relative; }
+    position: relative;
+    display: flex;
+    justify-content: center; }
+  .teams__image {
+    display: flex;
+    justify-content: center;
+    width: 272px;
+    overflow: hidden; }
   .teams__card {
     position: relative; }
+    .teams__card-image {
+      width: 304px;
+      max-width: 304px; }
     .teams__card-title {
       padding-top: 1.8rem;
       margin-bottom: 0.6rem; }
@@ -1162,7 +1172,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 18px;
+    margin-left: -135px;
     margin-top: -35px; }
   .teams__pricetag {
     background-color: #E3B873;
@@ -1411,16 +1421,7 @@ img {
   .logo {
     margin-left: 4rem; }
   .hero__content {
-    margin-left: 2.5rem; }
-  .teams__row {
-    flex-direction: column;
-    align-items: center; }
-  .teams__icon {
-    margin-left: 80px; }
-  .teams__col-32 {
-    margin-bottom: 4rem; }
-  .teams__icon {
-    margin-left: -35px; } }
+    margin-left: 2.5rem; } }
 
 @media screen and (max-width: 1200px) {
   .nav {
@@ -1428,7 +1429,9 @@ img {
     .nav__item {
       margin-right: 1.5rem; }
   .contacts__phone {
-    margin-left: 2rem; } }
+    margin-left: 2rem; }
+  .teams__col-32 {
+    flex-basis: 34%; } }
 
 @media screen and (max-width: 992px) {
   .hero {
@@ -1468,7 +1471,12 @@ img {
     max-width: 30rem; }
   .customers__pricetag {
     padding: 0.214rem 0.7rem;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .teams__col-32 {
+    flex-basis: 45%;
+    margin-bottom: 4.64rem; }
+  .teams__row {
+    flex-wrap: wrap; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1689,13 +1697,19 @@ img {
     margin-left: 1rem; }
   .teams {
     margin-top: 0rem; }
-    .teams__card {
-      max-height: 32.5rem; }
-      .teams__card-text {
-        margin-top: -8.2rem;
-        max-width: 20rem; }
-      .teams__card-title {
-        font-size: 1.45rem; }
+    .teams__image {
+      width: 304px; }
+    .teams__card-image {
+      padding: 0; }
+    .teams__card-text {
+      margin-top: -6.7rem;
+      max-width: 20rem; }
+    .teams__card-title {
+      font-size: 1.45rem; }
+    .teams__idea {
+      justify-content: flex-end; }
+    .teams__icon {
+      margin-left: -269px; }
     .teams__profession {
       font-size: 1.45rem;
       padding-bottom: 2.1rem; }
@@ -1703,14 +1717,10 @@ img {
       font-size: 1.1rem;
       padding: 1.2rem 1.7rem; }
     .teams__col-32 {
-      width: 95%;
-      text-align: end;
+      width: 93%;
       margin-bottom: 9.3rem; }
     .teams__text--section {
       margin-bottom: 3.8rem; }
-    .teams__icon {
-      margin-left: 25px;
-      margin-top: -20px; }
     .teams__content {
       display: none; } }
 

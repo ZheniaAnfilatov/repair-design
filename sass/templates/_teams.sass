@@ -16,8 +16,18 @@
     flex-basis: 30%
   &__idea
     position: relative
+    display: flex
+    justify-content: center
+  &__image
+    display: flex
+    justify-content: center
+    width: 272px
+    overflow: hidden
   &__card
     position: relative
+    &-image
+      width: 304px
+      max-width: 304px
     &-title
       padding-top: 1.8rem
       margin-bottom: 0.6rem
@@ -44,7 +54,7 @@
     display: flex
     align-items: center
     justify-content: center
-    margin-left: 18px
+    margin-left: -135px
     margin-top: -35px
   &__pricetag
     background-color: $primary
