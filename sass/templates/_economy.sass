@@ -1,4 +1,5 @@
 .economy
+  position: relative
   padding-top: 10rem
   padding-bottom: 20rem
   &__content
@@ -9,20 +10,22 @@
   &__scheme
     position: absolute
     width: 100%
+    top: 1.93rem
   &__circle
     position: absolute
     left: 0
     top: 60px
   &__discont
-    margin-top: 1rem
+    margin-top: 1.4rem
     display: flex
     align-items: center
-    justify-content: center
+    margin-left: 2.29rem
   &__text
     font-weight: 700
-    font-size: 1.429rem
-    max-width: 21rem
-    color: $primary
+    font-size: 1.5rem
+    max-width: 21.5rem
+    color: #E3B873
+    line-height: 1.5rem
   &__icon
     width: 72px
     height: 72px
@@ -32,22 +35,22 @@
     align-items: center
     justify-content: center
     border-radius: 50%
-    margin-right: 1rem
+    margin-right: 1.9rem
   &__paragraph
     position: absolute
     display: flex
     align-items: center
     &--first
-      top: 97px
-      left: 360px
+      top: 104px
+      left: 357px
     &--second
       left: 430px
       top: 217px
     &--third
-      left: 450px
+      left: 455px
       top: 377px
     &--fourth
-      left: 376px
+      left: 393px
       top: 539px
     &--number
       font-family: 'Yeseva One', cursive
@@ -69,6 +72,21 @@
       line-height: 1.5rem
       max-width: 26rem
       margin-left: 1.14rem
+  &__forms
+    margin-right: 0.57rem
+  &__modal
+    &--dialog
+      min-width: 36.14rem
+    &--title
+      font-family: 'Futura Demi', cursive
+      font-size: 1.4rem
+      text-align: center
+      margin-top: 1.9rem
+      max-width: 21.21rem
+      margin: 1.79rem auto 2.9rem
+  &__button
+    padding: 1.3rem 3rem
+    align-self: flex-end
   &__form
     display: flex
     flex-direction: column
