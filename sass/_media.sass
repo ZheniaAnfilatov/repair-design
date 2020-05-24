@@ -17,6 +17,34 @@
   .teams
     &__col-32
       flex-basis: 34%
+  .economy
+    &__scheme
+      top: 6.93rem
+    &__img
+      max-width: 500px
+    &__circle
+      max-width: 320px
+    &__paragraph
+      &--number
+        width: 30px
+        height: 30px
+        font-size: 1.1rem
+      &--text
+        font-size: 1.15rem
+        max-width: 21rem
+        margin-left: 0.7rem
+      &--first
+        top: 84px
+        left: 234px
+      &--second
+        left: 289px
+        top: 160px
+      &--third
+        left: 300px
+        top: 269px
+      &--fourth
+        left: 256px
+        top: 372px
 @media screen and ( max-width: 992px )
   .hero
     padding-left: 4rem
@@ -69,6 +97,10 @@
       margin-bottom: 4.64rem
     &__row
       flex-wrap: wrap
+  .economy
+    display: none
+  .steps
+    display: none
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -82,10 +114,6 @@
     &-55
       width: 90%
   .customers
-    display: none
-  .steps
-    display: none
-  .economy
     display: none
   .fantasies__links
     display: none

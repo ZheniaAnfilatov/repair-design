@@ -1448,7 +1448,33 @@ img {
   .contacts__phone {
     margin-left: 2rem; }
   .teams__col-32 {
-    flex-basis: 34%; } }
+    flex-basis: 34%; }
+  .economy__scheme {
+    top: 6.93rem; }
+  .economy__img {
+    max-width: 500px; }
+  .economy__circle {
+    max-width: 320px; }
+  .economy__paragraph--number {
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem; }
+  .economy__paragraph--text {
+    font-size: 1.15rem;
+    max-width: 21rem;
+    margin-left: 0.7rem; }
+  .economy__paragraph--first {
+    top: 84px;
+    left: 234px; }
+  .economy__paragraph--second {
+    left: 289px;
+    top: 160px; }
+  .economy__paragraph--third {
+    left: 300px;
+    top: 269px; }
+  .economy__paragraph--fourth {
+    left: 256px;
+    top: 372px; } }
 
 @media screen and (max-width: 992px) {
   .hero {
@@ -1493,7 +1519,11 @@ img {
     flex-basis: 45%;
     margin-bottom: 4.64rem; }
   .teams__row {
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .economy {
+    display: none; }
+  .steps {
+    display: none; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1506,10 +1536,6 @@ img {
   .col-55 {
     width: 90%; }
   .customers {
-    display: none; }
-  .steps {
-    display: none; }
-  .economy {
     display: none; }
   .fantasies__links {
     display: none; }
