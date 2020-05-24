@@ -1463,7 +1463,12 @@ img {
     text-decoration: none; }
   .footer__map {
     max-width: 44rem;
-    max-height: 22rem; } }
+    max-height: 22rem; }
+  .customers__card {
+    max-width: 30rem; }
+  .customers__pricetag {
+    padding: 0.214rem 0.7rem;
+    font-size: 1rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1474,7 +1479,19 @@ img {
   .col-40 {
     width: 90%; }
   .col-55 {
-    width: 90%; } }
+    width: 90%; }
+  .customers {
+    display: none; }
+  .steps {
+    display: none; }
+  .economy {
+    display: none; }
+  .fantasies__links {
+    display: none; }
+  .footer__menu {
+    display: none; }
+  .footer__text {
+    order: 5; } }
 
 @media screen and (max-width: 570px) {
   .header {
@@ -1635,12 +1652,7 @@ img {
   .swiper-img {
     margin-top: 2.8rem;
     height: 160px; }
-  .steps {
-    display: none; }
-  .footer__menu {
-    display: none; }
   .footer__text {
-    order: 5;
     padding: 0 1.2rem; }
   .footer__title {
     font-size: 1.5rem;
@@ -1700,9 +1712,7 @@ img {
       margin-left: 25px;
       margin-top: -20px; }
     .teams__content {
-      display: none; }
-  .customers {
-    display: none; } }
+      display: none; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {

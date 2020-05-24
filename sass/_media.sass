@@ -64,6 +64,12 @@
   .footer__map
     max-width: 44rem
     max-height: 22rem
+  .customers
+    &__card
+      max-width: 30rem
+    &__pricetag
+      padding: 0.214rem 0.7rem
+      font-size: 1rem
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -76,6 +82,19 @@
       width: 90%
     &-55
       width: 90%
+  .customers
+    display: none
+  .steps
+    display: none
+  .economy
+    display: none
+  .fantasies__links
+    display: none
+  .footer
+    &__menu
+      display: none
+    &__text
+      order: 5
 @media screen and ( max-width: 570px )
   .header
     padding: 1.8rem 0
@@ -235,13 +254,8 @@
     &-img
       margin-top: 2.8rem
       height: 160px
-  .steps
-    display: none
   .footer
-    &__menu
-      display: none
     &__text
-      order: 5
       padding: 0 1.2rem
     &__title
       font-size: 1.5rem
@@ -304,8 +318,6 @@
       margin-top: -20px
     &__content
       display: none
-  .customers
-    display: none
 @media screen and ( max-height: 560px )
   .hero
     &__scroll-down
