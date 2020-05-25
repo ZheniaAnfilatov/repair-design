@@ -22,6 +22,8 @@
   .contacts
     &__phone
       margin-left: 2rem
+  .steps
+    padding-top: 32.5rem
   .teams
     &__col-32
       flex-basis: 34%
@@ -102,6 +104,20 @@
     &--outline
       &:hover
         text-decoration: none
+  .control
+    background-color: $dark
+    &__text
+      color: $light
+    &__form
+      color: $light
+    &__policy-label
+      color: $light
+    &__label
+      color: rgba($light, 0.5)
+    &__input
+      color: $light
+      &::placeholder
+        color: $light
   .footer__map
     max-width: 44rem
     max-height: 22rem
@@ -112,22 +128,37 @@
       padding: 0.214rem 0.7rem
       font-size: 1rem
   .teams
+    background-color: $dark
+    margin-top: -35.3rem
+    padding-top: 3rem
+    margin-bottom: 0
     &__col-32
       flex-basis: 45%
       margin-bottom: 4.64rem
     &__row
       flex-wrap: wrap
+    &__content
+      display: none
   .economy
     display: none
   .steps
     display: none
-  .fantasies
-    &__img
-      top: 50px
-      right: 20px
-      width: 470px
-    &__section-heading
-      font-size: 1.6rem
+  .types
+    padding-top: 3rem
+  .design
+    padding-top: 3rem
+    margin-bottom: 35rem
+    background-color: $dark
+    color: $light
+  .customers
+    display: none
+  .footer
+    background: none
+    background-color: $dark
+    &__wrap
+      background: none
+      transform: none
+      margin-bottom: 0
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -140,34 +171,11 @@
       width: 90%
     &-55
       width: 90%
-  .customers
-    display: none
-  .fantasies__links
-    display: none
   .footer
     &__menu
       display: none
     &__text
       order: 5
-  .fantasies
-    background: none
-    &::before
-      display: none
-    &__img
-      display: none
-    &__section-heading
-      margin: 0 auto 30px
-      text-align: center
-      padding-top: 5.5rem
-      max-width: 29.36rem
-      font-size: 1.84rem
-    &-swiper
-      opacity: 1
-      visibility: visible
-      &__slide
-        justify-content: center
-        height: 350px
-        overflow: hidden
 @media screen and ( max-width: 570px )
   .header
     padding: 1.8rem 0
@@ -241,12 +249,26 @@
     &__pricetag
           padding: 1rem 2.7rem
   .design
+    margin-bottom: -1px
+    &__cards
+      margin-bottom: 5.857rem
+    &__card
+      &-image
+        padding: 0
+      &-title
+        color: $dark
+      &-text
+        margin-left: 0
+        margin-top: -12.3rem  
+        padding: 1.79rem 2.5rem
+    &__section-title
+      margin-bottom: 1.3rem
     &__text
       font-size: 1.2rem
-      padding: 0 4rem
+      max-width: 26rem
       line-height: 1.8rem
       &--section
-        margin-bottom: 1.6rem
+        margin-bottom: 2.6rem
     &__pricetag
       bottom: -2.2rem
       padding: 1rem 3.9rem
@@ -274,6 +296,8 @@
   .control
     padding-top: 30.5rem
     background-color: $dark
+    margin-bottom: -11.2rem
+    margin-top: -1px
     &__form
       padding: 0 12px
     &__label
@@ -328,10 +352,14 @@
       margin-top: 2.8rem
       height: 160px
   .footer
+    margin-top: -1.429rem
+    &__section-title
+      font-size: 1.5rem
+      margin-bottom: 4.9rem
     &__text
       padding: 0 1.2rem
     &__title
-      font-size: 1.5rem
+      font-size: 1.7rem
       margin-bottom: 4.5rem
       line-height: 1.95rem
     &__input
@@ -365,6 +393,9 @@
       margin-left: 1rem
   .teams
     margin-top: 0rem
+    padding-top: 1.3rem
+    &__section-title
+      margin-bottom: 1.2rem
     &__image
       width: 304px
     &__card
@@ -387,15 +418,18 @@
       padding: 1.2rem 1.7rem
     &__col-32
       width: 93%
-      margin-bottom: 9.3rem
+      margin-bottom: 7.1rem
     &__text
       &--section
-        margin-bottom: 3.8rem
-    &__content
-      display: none
-  .fantasies-swiper
-    &__slide
-    height: 242px
+        margin-bottom: 6.9rem
+        font-size: 1.25rem
+        max-width: 28rem
+  .types
+    padding-top: 5.1rem
+    &__row
+      margin-left: 0px
+    &__section-title
+      margin-bottom: 2.4rem
 @media screen and ( max-height: 560px )
   .hero
     &__scroll-down

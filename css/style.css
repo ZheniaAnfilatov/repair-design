@@ -784,7 +784,8 @@ img {
   margin: auto; }
 
 .types {
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  background-color: #fff; }
   .types__row {
     margin-left: 8px; }
   .types__section-title {
@@ -1286,6 +1287,8 @@ img {
     height: 33.21rem;
     width: 66rem; }
   .footer__section-title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
     position: relative;
     max-width: 39rem;
     text-align: center;
@@ -1411,6 +1414,8 @@ img {
       margin-right: 1.5rem; }
   .contacts__phone {
     margin-left: 2rem; }
+  .steps {
+    padding-top: 32.5rem; }
   .teams__col-32 {
     flex-basis: 34%; }
   .economy__scheme {
@@ -1481,6 +1486,28 @@ img {
     color: #fff; }
   .button--outline:hover {
     text-decoration: none; }
+  .control {
+    background-color: #131313; }
+    .control__text {
+      color: #fff; }
+    .control__form {
+      color: #fff; }
+    .control__policy-label {
+      color: #fff; }
+    .control__label {
+      color: rgba(255, 255, 255, 0.5); }
+    .control__input {
+      color: #fff; }
+      .control__input::-webkit-input-placeholder {
+        color: #fff; }
+      .control__input::-moz-placeholder {
+        color: #fff; }
+      .control__input:-ms-input-placeholder {
+        color: #fff; }
+      .control__input::-ms-input-placeholder {
+        color: #fff; }
+      .control__input::placeholder {
+        color: #fff; }
   .footer__map {
     max-width: 44rem;
     max-height: 22rem; }
@@ -1489,21 +1516,38 @@ img {
   .customers__pricetag {
     padding: 0.214rem 0.7rem;
     font-size: 1rem; }
-  .teams__col-32 {
-    flex-basis: 45%;
-    margin-bottom: 4.64rem; }
-  .teams__row {
-    flex-wrap: wrap; }
+  .teams {
+    background-color: #131313;
+    margin-top: -35.3rem;
+    padding-top: 3rem;
+    margin-bottom: 0; }
+    .teams__col-32 {
+      flex-basis: 45%;
+      margin-bottom: 4.64rem; }
+    .teams__row {
+      flex-wrap: wrap; }
+    .teams__content {
+      display: none; }
   .economy {
     display: none; }
   .steps {
     display: none; }
-  .fantasies__img {
-    top: 50px;
-    right: 20px;
-    width: 470px; }
-  .fantasies__section-heading {
-    font-size: 1.6rem; } }
+  .types {
+    padding-top: 3rem; }
+  .design {
+    padding-top: 3rem;
+    margin-bottom: 35rem;
+    background-color: #131313;
+    color: #fff; }
+  .customers {
+    display: none; }
+  .footer {
+    background: none;
+    background-color: #131313; }
+    .footer__wrap {
+      background: none;
+      transform: none;
+      margin-bottom: 0; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1515,33 +1559,10 @@ img {
     width: 90%; }
   .col-55 {
     width: 90%; }
-  .customers {
-    display: none; }
-  .fantasies__links {
-    display: none; }
   .footer__menu {
     display: none; }
   .footer__text {
-    order: 5; }
-  .fantasies {
-    background: none; }
-    .fantasies::before {
-      display: none; }
-    .fantasies__img {
-      display: none; }
-    .fantasies__section-heading {
-      margin: 0 auto 30px;
-      text-align: center;
-      padding-top: 5.5rem;
-      max-width: 29.36rem;
-      font-size: 1.84rem; }
-    .fantasies-swiper {
-      opacity: 1;
-      visibility: visible; }
-      .fantasies-swiper__slide {
-        justify-content: center;
-        height: 350px;
-        overflow: hidden; } }
+    order: 5; } }
 
 @media screen and (max-width: 570px) {
   .header {
@@ -1613,17 +1634,31 @@ img {
         bottom: -0.6rem; }
   .card__pricetag {
     padding: 1rem 2.7rem; }
-  .design__text {
-    font-size: 1.2rem;
-    padding: 0 4rem;
-    line-height: 1.8rem; }
-    .design__text--section {
-      margin-bottom: 1.6rem; }
-  .design__pricetag {
-    bottom: -2.2rem;
-    padding: 1rem 3.9rem; }
-  .design__image::before {
-    display: none; }
+  .design {
+    margin-bottom: -1px; }
+    .design__cards {
+      margin-bottom: 5.857rem; }
+    .design__card-image {
+      padding: 0; }
+    .design__card-title {
+      color: #131313; }
+    .design__card-text {
+      margin-left: 0;
+      margin-top: -12.3rem;
+      padding: 1.79rem 2.5rem; }
+    .design__section-title {
+      margin-bottom: 1.3rem; }
+    .design__text {
+      font-size: 1.2rem;
+      max-width: 26rem;
+      line-height: 1.8rem; }
+      .design__text--section {
+        margin-bottom: 2.6rem; }
+    .design__pricetag {
+      bottom: -2.2rem;
+      padding: 1rem 3.9rem; }
+    .design__image::before {
+      display: none; }
   .col-40 {
     width: 96%; }
   .col-55 {
@@ -1642,7 +1677,9 @@ img {
       line-height: 1.95rem; }
   .control {
     padding-top: 30.5rem;
-    background-color: #131313; }
+    background-color: #131313;
+    margin-bottom: -11.2rem;
+    margin-top: -1px; }
     .control__form {
       padding: 0 12px; }
     .control__label {
@@ -1702,43 +1739,51 @@ img {
   .swiper-img {
     margin-top: 2.8rem;
     height: 160px; }
-  .footer__text {
-    padding: 0 1.2rem; }
-  .footer__title {
-    font-size: 1.5rem;
-    margin-bottom: 4.5rem;
-    line-height: 1.95rem; }
-  .footer__input {
-    font-size: 1.5rem; }
-    .footer__input--down {
-      margin-bottom: 0; }
-    .footer__input-group {
-      flex-basis: 100%;
-      margin-bottom: 5.5rem; }
-  .footer__wrap {
-    padding: 1rem;
-    margin-bottom: 2.9rem; }
-  .footer__policy {
-    margin-top: -3.6rem;
-    flex-basis: 79%;
-    margin-bottom: 5.6rem; }
-    .footer__policy-label {
-      font-size: 1.35rem; }
-  .footer__button {
-    width: 100%;
-    padding: 1.4rem 4.37rem;
-    font-size: 1.2rem; }
-  .footer__map {
-    max-width: 28.5rem;
-    max-height: 21.1rem;
-    margin-bottom: 3.6rem; }
-  .footer__icon {
-    height: 3.5rem;
-    margin-top: -2.5rem;
-    margin-right: 1rem;
-    margin-left: 1rem; }
+  .footer {
+    margin-top: -1.429rem; }
+    .footer__section-title {
+      font-size: 1.5rem;
+      margin-bottom: 4.9rem; }
+    .footer__text {
+      padding: 0 1.2rem; }
+    .footer__title {
+      font-size: 1.7rem;
+      margin-bottom: 4.5rem;
+      line-height: 1.95rem; }
+    .footer__input {
+      font-size: 1.5rem; }
+      .footer__input--down {
+        margin-bottom: 0; }
+      .footer__input-group {
+        flex-basis: 100%;
+        margin-bottom: 5.5rem; }
+    .footer__wrap {
+      padding: 1rem;
+      margin-bottom: 2.9rem; }
+    .footer__policy {
+      margin-top: -3.6rem;
+      flex-basis: 79%;
+      margin-bottom: 5.6rem; }
+      .footer__policy-label {
+        font-size: 1.35rem; }
+    .footer__button {
+      width: 100%;
+      padding: 1.4rem 4.37rem;
+      font-size: 1.2rem; }
+    .footer__map {
+      max-width: 28.5rem;
+      max-height: 21.1rem;
+      margin-bottom: 3.6rem; }
+    .footer__icon {
+      height: 3.5rem;
+      margin-top: -2.5rem;
+      margin-right: 1rem;
+      margin-left: 1rem; }
   .teams {
-    margin-top: 0rem; }
+    margin-top: 0rem;
+    padding-top: 1.3rem; }
+    .teams__section-title {
+      margin-bottom: 1.2rem; }
     .teams__image {
       width: 304px; }
     .teams__card-image {
@@ -1760,13 +1805,17 @@ img {
       padding: 1.2rem 1.7rem; }
     .teams__col-32 {
       width: 93%;
-      margin-bottom: 9.3rem; }
+      margin-bottom: 7.1rem; }
     .teams__text--section {
-      margin-bottom: 3.8rem; }
-    .teams__content {
-      display: none; }
-  .fantasies-swiper {
-    height: 242px; } }
+      margin-bottom: 6.9rem;
+      font-size: 1.25rem;
+      max-width: 28rem; }
+  .types {
+    padding-top: 5.1rem; }
+    .types__row {
+      margin-left: 0px; }
+    .types__section-title {
+      margin-bottom: 2.4rem; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {
