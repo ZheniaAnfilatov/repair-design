@@ -149,10 +149,20 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response)
+        }
+      });
     }
   });
 
-  // валидацция формы модального окна
+  // валидацция формы economy
   $('.economy__form').validate({
     errorClass: "invalid",
     errorElement: "div",
