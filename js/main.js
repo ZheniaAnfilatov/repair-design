@@ -113,20 +113,6 @@ $(document).ready(function () {
     
   });
 
-  // swiper Fantasies
-  var mySwiper = new Swiper ('.fantasies-swiper', {
-    loop: true,
-    navigation: {
-      nextEl: '.fantasies__swiper-button-next',
-      prevEl: '.fantasies__swiper-button-prev',
-    },
-  })
-
-  var fantasiesNext = $('.fantasies__swiper-button-next');
-  var fantasiesPrev = $('.fantasies__swiper-button-prev');
-
-  fantasiesNext.css('center', fantasiesPrev.width() + 10)
-
   // анимация
   new WOW().init();
 

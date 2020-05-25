@@ -827,8 +827,8 @@ img {
 
 .economy {
   position: relative;
-  padding-top: 10rem;
-  padding-bottom: 20rem; }
+  padding-top: 13.1rem;
+  padding-bottom: 5rem; }
   .economy__content {
     position: relative;
     display: flex;
@@ -837,7 +837,7 @@ img {
   .economy__scheme {
     position: absolute;
     width: 100%;
-    top: 1.93rem; }
+    top: 5rem; }
   .economy__circle {
     position: absolute;
     left: 0;
@@ -926,85 +926,8 @@ img {
     margin-top: -1.95rem;
     font-size: 1.15rem; }
 
-.fantasies {
-  position: relative;
-  background: #131313 url(../img/bg-fantasy.png) no-repeat center/cover;
-  height: 61.7rem;
-  margin-bottom: 6rem; }
-  .fantasies::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(19, 19, 19, 0.7); }
-  .fantasies-swiper {
-    width: 350px; }
-  .fantasies__section-heading {
-    position: relative;
-    font-family: 'Yeseva One', cursive;
-    font-weight: normal;
-    font-size: 1.929rem;
-    line-height: 2.64rem;
-    max-width: 29.36rem;
-    padding-top: 9.79rem;
-    padding-left: 0.5rem;
-    margin-bottom: 3.14rem; }
-  .fantasies__swiper {
-    display: flex; }
-  .fantasies__links {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 39.5%;
-    padding-left: 0.5rem; }
-  .fantasies__link {
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Futura';
-    font-size: 1.66rem;
-    margin-bottom: 1.67rem; }
-    .fantasies__link:hover {
-      color: #E3B873;
-      text-decoration: underline; }
-  .fantasies__img {
-    position: absolute;
-    display: flex;
-    height: 1017px;
-    top: -112px;
-    right: 100px; }
-    .fantasies__img--left {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      margin-top: 72px;
-      margin-right: 44px; }
-    .fantasies__img--right {
-      display: flex;
-      flex-direction: column;
-      align-items: start; }
-  .fantasies-swiper {
-    opacity: 0;
-    visibility: hidden; }
-
-.style {
-  margin-bottom: 2.9rem; }
-
-.fantasies__swiper-button-next, .fantasies__swiper-button-prev {
-  width: 36px;
-  height: 36px; }
-  .fantasies__swiper-button-next::after, .fantasies__swiper-button-prev::after {
-    display: none; }
-
-.fantasies__swiper-button-next {
-  background: url("../img/arrow-next-fan.svg") no-repeat center; }
-
-.fantasies__swiper-button-prev {
-  background: url("../img/arrow-prev-fan.svg") no-repeat center; }
-
 .design {
-  padding-bottom: 10rem; }
+  margin-bottom: -30.71rem; }
   .design__row {
     padding: 0 10px; }
   .design__section-title {
@@ -1040,8 +963,8 @@ img {
       background-color: rgba(19, 19, 19, 0.3); }
 
 .steps {
-  padding-top: 10rem;
-  padding-bottom: 30rem; }
+  padding-top: 30.5rem;
+  padding-bottom: 36rem; }
   .steps__section-heading {
     font-size: 1.9rem;
     margin-top: 1.14rem;
@@ -1166,8 +1089,8 @@ img {
   opacity: 1; }
 
 .teams {
-  margin-top: -20rem;
-  margin-bottom: 10rem; }
+  margin-top: -30.3rem;
+  margin-bottom: 7rem; }
   .teams__row {
     justify-content: center; }
   .teams__text {
@@ -1251,7 +1174,9 @@ img {
       border-radius: 30px; }
 
 .customers {
-  padding-bottom: 30rem; }
+  padding-bottom: 27.4rem; }
+  .customers__section-title {
+    margin-bottom: 1rem; }
   .customers__row {
     margin-left: 0.786rem; }
   .customers__col {
@@ -1315,7 +1240,9 @@ img {
     margin: auto;
     margin-bottom: 3.714rem;
     padding: 2.5rem;
-    background: #181818 url(../img/bg-lines.svg) no-repeat center/cover; }
+    background: #181818 url(../img/bg-lines.svg) no-repeat center/cover;
+    transform: translate(11px, -223px);
+    margin-bottom: -12.2rem; }
   .footer__title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
