@@ -448,11 +448,29 @@ $(document).ready(function () {
       }
     );  
   }
-  
   $(function() {
- 
   ymap();
+  });
 
+  $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+  });
+
+  var btnUp = $('.nav__item-up');
+  btnUp.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, 1500);
+  });
+
+  var btnUp1 = $('.logo');
+  btnUp1.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, 1500);
   });
 
 });
