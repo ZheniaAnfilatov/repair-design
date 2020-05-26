@@ -1279,13 +1279,6 @@ img {
     position: relative;
     background-color: #131313;
     padding: 3.3rem 0; }
-  .footer__map {
-    background: url(../img/map.png);
-    margin-bottom: 4.7rem;
-    display: flex;
-    justify-content: center;
-    height: 33.21rem;
-    width: 66rem; }
   .footer__section-title {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
@@ -1307,6 +1300,86 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center; }
+
+.ymap-container {
+  position: relative;
+  margin-bottom: 4.7rem;
+  overflow: hidden;
+  cursor: pointer;
+  background: url(../img/map.png) #ffffff no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+  width: 66rem;
+  height: 33.21rem; }
+
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: transparent; }
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55); }
+
+.loader:after, .loader:before {
+  box-sizing: border-box; }
+
+.loader.is-active {
+  top: 0;
+  opacity: 1; }
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%; }
+
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
+
+@keyframes blink {
+  from {
+    opacity: .5; }
+  to {
+    opacity: 1; } }
 
 .modal {
   opacity: 0;
@@ -1536,7 +1609,7 @@ img {
         color: #fff; }
       .control__input::placeholder {
         color: #fff; }
-  .footer__map {
+  .ymap-container {
     max-width: 44rem;
     max-height: 22rem; }
   .customers__card {
@@ -1796,15 +1869,15 @@ img {
       width: 100%;
       padding: 1.4rem 4.37rem;
       font-size: 1.2rem; }
-    .footer__map {
-      max-width: 28.5rem;
-      max-height: 21.1rem;
-      margin-bottom: 3.6rem; }
     .footer__icon {
       height: 3.5rem;
       margin-top: -2.5rem;
       margin-right: 1rem;
       margin-left: 1rem; }
+  .ymap-container {
+    max-width: 28.5rem;
+    max-height: 21.1rem;
+    margin-bottom: 3.6rem; }
   .teams {
     margin-top: 0rem;
     padding-top: 1.3rem; }
