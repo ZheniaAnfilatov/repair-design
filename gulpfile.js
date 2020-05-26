@@ -50,12 +50,15 @@ function buildCSS(done) {
 
 function buildJS(done) {
     src(['js/**.js', '!js/**.min.js'])
-        .pipe(minify({ext:{
-                min:'.js'
-            }    
-        }))
+    .pipe(minify({
+        ext:{
+            min: '.js'
+        },
+        noSource: true,
+    }))
         .pipe(dest('dist/js/'));
-    src('js/**.min.js').pipe(dest('dist/js/'));
+    src('js/**.min.js')
+        .pipe(dest('dist/js/'));
     done();
 }
 
