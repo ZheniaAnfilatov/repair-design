@@ -350,7 +350,7 @@ template {
     color: rgba(255, 255, 255, 0.5); }
 
 .input {
-  background-color: transparent;
+  background-color: transparent !important;
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
@@ -389,6 +389,10 @@ template {
   .policy__label--center {
     justify-content: center;
     font-size: 1.1rem; }
+
+input:hover, input:active, input:focus {
+  outline: 0;
+  outline-offset: 0; }
 
 input.invalid {
   border-bottom: 1px solid red; }
@@ -520,7 +524,10 @@ img {
       color: #E3B873; }
 
 .phone {
-  color: #E3B873; }
+  color: #E3B873;
+  text-decoration: none; }
+  .phone:hover {
+    text-decoration: underline; }
 
 .contacts {
   margin-left: 1rem;
@@ -676,6 +683,9 @@ img {
     background-size: 42px;
     width: 42px;
     height: 14px; }
+    .projects__swiper-button-prev:hover, .projects__swiper-button-prev:active, .projects__swiper-button-prev:focus, .projects__swiper-button-next:hover, .projects__swiper-button-next:active, .projects__swiper-button-next:focus {
+      outline: 0;
+      outline-offset: 0; }
     .projects__swiper-button-prev::after, .projects__swiper-button-next::after {
       display: none; }
   .projects__swiper-button-prev {
@@ -1005,6 +1015,9 @@ img {
     background-size: 42px;
     width: 42px;
     height: 14px; }
+    .steps__swiper-button-prev:hover, .steps__swiper-button-prev:active, .steps__swiper-button-prev:focus, .steps__swiper-button-next:hover, .steps__swiper-button-next:active, .steps__swiper-button-next:focus {
+      outline: 0;
+      outline-offset: 0; }
     .steps__swiper-button-prev::after, .steps__swiper-button-next::after {
       display: none; }
   .steps__swiper-button-prev {
@@ -1605,6 +1618,10 @@ img {
     color: #fff; }
   .button--outline:hover {
     text-decoration: none; }
+  .phone {
+    text-decoration: underline; }
+    .phone:hover {
+      text-decoration: none; }
   .control {
     background-color: #131313; }
     .control__text {

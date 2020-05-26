@@ -122,6 +122,7 @@ $(document).ready(function () {
   var modalThanks = $('.modal__thanks');
       closeThanks = $('.modal__thanks--close');
 
+  
   $('.modal__form').validate({
     errorClass: "invalid",
     errorElement: "div",
@@ -166,6 +167,13 @@ $(document).ready(function () {
       });
     }
   });
+  $('#policy-checkbox-modal').on('change', function () {
+    if ( $('#policy-checkbox-modal').prop('checked') ) {
+        $('.modal__button').attr('disabled', false);
+    } else {
+        $('.modal__button').attr('disabled', true);
+    }
+  });
 
   // закрывание на крестик
   closeThanks.on('click', function () {
@@ -202,7 +210,7 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
     },
       // сообщения
     messages: {
@@ -228,6 +236,14 @@ $(document).ready(function () {
           modalThanks.addClass('modal__thanks--visible');
         }
       });
+    }
+  });
+
+  $('#policy-checkbox-economy').on('change', function () {
+    if ( $('#policy-checkbox-economy').prop('checked') ) {
+        $('.economy__button').attr('disabled', false);
+    } else {
+        $('.economy__button').attr('disabled', true);
     }
   });
 
@@ -269,6 +285,14 @@ $(document).ready(function () {
     }
   });
 
+  $('#policy-checkbox-footer').on('change', function () {
+    if ( $('#policy-checkbox-footer').prop('checked') ) {
+        $('.footer__button').attr('disabled', false);
+    } else {
+        $('.footer__button').attr('disabled', true);
+    }
+  });
+
   // валидацция формы control
   $('.control__form').validate({
     errorClass: "invalid",
@@ -304,6 +328,14 @@ $(document).ready(function () {
     }
   });
 
+  $('#policy-checkbox-control').on('change', function () {
+    if ( $('#policy-checkbox-control').prop('checked') ) {
+        $('.control__button').attr('disabled', false);
+    } else {
+        $('.control__button').attr('disabled', true);
+    }
+  });
+
   // маска для телефона
 
   $('[type=tel]').mask('+7(000) 000-00-00');
@@ -311,9 +343,7 @@ $(document).ready(function () {
 
 
   var spinner = $('.ymap-container').children('.loader');
-
   var check_if_load = false;
-
   var myMapTemp, myPlacemarkTemp;
   
  
@@ -323,6 +353,7 @@ $(document).ready(function () {
       zoom: 14, 
       controls: ['zoomControl', 'fullscreenControl']
     });
+        myMapTemp.behaviors.disable("scrollZoom");
     var myPlacemarkTemp = new ymaps.Placemark([47.244729, 39.723187], {
         balloonContent: "Здесь может быть ваш адрес",
     }, {
