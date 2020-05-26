@@ -74,6 +74,8 @@
     &--visible
       opacity: 1
       visibility: visible
+    &-text
+      color: $primary
     &--close
       position: absolute
       right: 0
@@ -86,3 +88,17 @@
       cursor: pointer
     &-title
       padding-top: 5rem
+    &-dialog
+      display: flex
+      flex-direction: column
+      align-items: center
+    &--group
+      margin-top: 5rem
+      margin-bottom: 0
+      font-size: 1.15rem
+    &--link
+      text-decoration: none
+      color: $primary
+      font-size: 2rem
+      &:hover
+        text-decoration: underline

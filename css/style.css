@@ -414,10 +414,10 @@ div.invalid {
   flex-basis: 32%; }
 
 .col-55 {
-  width: 55%; }
+  width: 54%; }
 
 .col-40 {
-  width: 40%; }
+  width: 39%; }
 
 .col-29 {
   width: 30%; }
@@ -1455,6 +1455,8 @@ img {
     .modal__thanks--visible {
       opacity: 1;
       visibility: visible; }
+    .modal__thanks-text {
+      color: #E3B873; }
     .modal__thanks--close {
       position: absolute;
       right: 0;
@@ -1467,6 +1469,20 @@ img {
       cursor: pointer; }
     .modal__thanks-title {
       padding-top: 5rem; }
+    .modal__thanks-dialog {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .modal__thanks--group {
+      margin-top: 5rem;
+      margin-bottom: 0;
+      font-size: 1.15rem; }
+    .modal__thanks--link {
+      text-decoration: none;
+      color: #E3B873;
+      font-size: 2rem; }
+      .modal__thanks--link:hover {
+        text-decoration: underline; }
 
 .button-up {
   display: inline-block;
