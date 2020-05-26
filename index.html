@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=33f05616-22b4-4fc4-b7b6-78ab63da2e42&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=33f05616-22b4-4fc4-b7b6-78ab63da2e42&lang=ru_RU"></script>
   <link rel="stylesheet" href="css/animate.css"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
@@ -169,7 +169,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section section--dark projects -->
+    <!-- /.section section-dark projects -->
     <section class="section control">
       <div class="container">
         <div class="section-title control__section-title section-title--light">
@@ -191,11 +191,11 @@
         <!-- /.control__text -->
         <form action="send.php" method="POST" class="form control__form">
           <div class="control__input-group">
-            <label for="user-name" class="label form__label control__label">Имя</label>
+            <label for="user-name-control" class="label form__label control__label">Имя</label>
             <input type="text" name="userName" class="input form__input control__input" id="user-name-control" placeholder="Как вас зовут:">
           </div>
           <div class="control__input-group control__input-group--down">
-            <label for="user-phone" class="label form__label control__label">Телефон</label>
+            <label for="user-phone-control" class="label form__label control__label">Телефон</label>
             <input type="tel" name="userPhone" class="input form__input control__input" id="user-phone-control" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.policy -->
@@ -364,17 +364,17 @@
               <h3 class="economy__modal--title">Оставьте заявку на бесплатный выезд замерщика</h3>
               <form action="send.php" method="POST" class="form economy__form">
                 <div class="input-group economy__input-group">
-                  <label for="user-name" class="label form__label label--light">Имя</label>
+                  <label for="user-name-economy" class="label form__label label--light">Имя</label>
                   <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name-economy" placeholder="Как вас зовут:">
                 </div>
                 <!-- /.input-group modal__input-group -->
                 <div class="input-group economy__input-group">
-                  <label for="user-phone" class="label form__label label--light">Телефон</label>
+                  <label for="user-phone-economy" class="label form__label label--light">Телефон</label>
                   <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone-economy" placeholder="Ваш телефон:">
                 </div>
                 <!-- /.input-group modal__input-group -->
                 <div class="input-group economy__input-group">
-                  <label for="user-email" class="label form__label label--light">Email</label>
+                  <label for="user-email-economy" class="label form__label label--light">Email</label>
                   <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email-economy" placeholder="Ваш email:">
                 </div>
                 <!-- /.input-group modal__input-group -->
@@ -531,7 +531,7 @@
               <span class="steps__heading">Как мы работаем</span>
               <h2 class="section-title__heading section-title__heading--primary steps__section-heading">6 шагов<span class="section-title__steps">до цели</span></h2>
             </div>
-            <!-- section-title section-title--left -->
+            <!-- section-title section-title-left -->
              <div class="swiper-pagination steps__swiper-pagination2"></div>
               <!-- Slider main container -->
               <div class="swiper-container steps-swiper swiper-no-swiping">
@@ -647,7 +647,7 @@
       </div>
       <!-- /.container -->
     </div>
-    <!-- /.section section--dark steps -->
+    <!-- /.section section-dark steps -->
     <section class="section teams">
       <div class="container">
         <div class="section-title teams__section-title section-title--light">
@@ -848,17 +848,17 @@
         <h3 class="footer__title">остались вопросы?</h3>
         <form action="send.php" method="POST" class="form footer__form">
           <div class="input-group footer__input-group">
-            <label for="user-name" class="label form__label label--light">Имя</label>
+            <label for="user-name-footer" class="label form__label label--light">Имя</label>
             <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name-footer" placeholder="Как вас зовут:">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group">
-            <label for="user-phone" class="label form__label label--light">Телефон</label>
+            <label for="user-phone-footer" class="label form__label label--light">Телефон</label>
             <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone-footer" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group footer__input-group -->
           <div class="input-group footer__input-group footer__input-group--full-width">
-            <label for="user-question" class="label form__label label--light">Вопрос</label>
+            <label for="user-question-footer" class="label form__label label--light">Вопрос</label>
             <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="user-question-footer" placeholder="Я хочу спросить:">  
           </div>
           <!-- /.input-group footer__input-group -->
@@ -910,24 +910,24 @@
     </div>
     <!-- /.footer__menu -->
   </footer>
-  <!-- /.footer section section--dark -->
+  <!-- /.footer section section-dark -->
   <div class="modal">
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами </h3>
       <form action="send.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
-          <label for="user-name" class="label form__label label--light">Имя</label>
+          <label for="user-name-modal" class="label form__label label--light">Имя</label>
           <input type="text" name="userName" class="input form__input modal__input input--light" id="user-name-modal" placeholder="Как вас зовут:">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group">
-          <label for="user-phone" class="label form__label label--light">Телефон</label>
+          <label for="user-phone-modal" class="label form__label label--light">Телефон</label>
           <input type="tel" name="userPhone" class="input form__input modal__input input--light" id="user-phone-modal" placeholder="Ваш номер телефона:">
         </div>
         <!-- /.input-group modal__input-group -->
         <div class="input-group modal__input-group">
-          <label for="user-email" class="label form__label label--light">Email</label>
+          <label for="user-email-modal" class="label form__label label--light">Email</label>
           <input type="email" name="userEmail" class="input form__input modal__input input--light" id="user-email-modal" placeholder="Ваш email:">
         </div>
         <!-- /.input-group modal__input-group -->
