@@ -35,6 +35,6 @@ function serveSass() {
         }))
         .pipe(dest("./css"))
         .pipe(browserSync.stream());
-}
+};
 
 exports.serve = bs;
