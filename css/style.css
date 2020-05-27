@@ -791,7 +791,10 @@ img {
 
 .video__play {
   position: relative;
-  margin: auto; }
+  margin: auto;
+  cursor: pointer; }
+  .video__play:hover {
+    width: 155px; }
 
 .types {
   padding-bottom: 5rem;
