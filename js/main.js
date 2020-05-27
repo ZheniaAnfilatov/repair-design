@@ -234,6 +234,7 @@ $(document).ready(function () {
           $(form)[0].reset();
           modal.removeClass('modal--visible');
           modalThanks.addClass('modal__thanks--visible');
+          ym('64399912', 'reachGoal', 'send'); return true;
         }
       });
     }
