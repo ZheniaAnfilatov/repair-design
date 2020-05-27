@@ -1241,7 +1241,7 @@ img {
 
 .footer {
   position: relative;
-  background: #131313 url("../img/footer-bg.png") no-repeat center/cover; }
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
   .footer::before {
     content: '';
     position: absolute;
