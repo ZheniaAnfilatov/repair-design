@@ -163,7 +163,6 @@ $(document).ready(function () {
           $(form)[0].reset();
           modal.removeClass('modal--visible');
           modalThanks.addClass('modal__thanks--visible');
-          ym(64399912, 'reachGoal', 'send'); return true;
         }
       });
     }
@@ -230,7 +229,7 @@ $(document).ready(function () {
       $.ajax({
         type: "POST",
         url: "send.php",
-        data: $().serialize('.economy__form'),
+        data: $('.economy__form').serialize(),
         success: function (response) {
           $(form)[0].reset();
           modal.removeClass('modal--visible');
@@ -276,7 +275,7 @@ $(document).ready(function () {
       $.ajax({
         type: "POST",
         url: "send.php",
-        data: $().serialize('.footer__form'),
+        data: $('.footer__form').serialize(),
         success: function (response) {
           $(form)[0].reset();
           modal.removeClass('modal--visible');
@@ -319,7 +318,7 @@ $(document).ready(function () {
       $.ajax({
         type: "POST",
         url: "send.php",
-        data: $().serialize('.control__form'),
+        data: $('.control__form').serialize(),
         success: function (response) {
           $(form)[0].reset();
           modal.removeClass('modal--visible');
