@@ -459,7 +459,8 @@ img {
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive;
     line-height: 138%;
-    font-size: 1.429rem; }
+    font-size: 1.429rem;
+    font-weight: normal; }
     .section-title__heading--primary {
       color: #E3B873; }
   .section-title__word {
@@ -697,7 +698,8 @@ img {
     padding-left: 0.7rem; }
   .projects__section-heading {
     font-size: 1.8rem;
-    line-height: 2.64rem; }
+    line-height: 2.64rem;
+    font-weight: normal; }
   .projects__section-text {
     margin-bottom: 2.14rem; }
 
@@ -817,7 +819,8 @@ img {
   font-family: 'Yeseva One', cursive;
   font-size: 1.29rem;
   margin-top: 0;
-  margin-bottom: 0.7rem; }
+  margin-bottom: 0.7rem;
+  font-weight: normal; }
 
 .card__list {
   padding: 0 0 0 1rem;
@@ -939,6 +942,9 @@ img {
     margin-bottom: 2.7rem;
     margin-top: -1.95rem;
     font-size: 1.15rem; }
+
+.paragraph__text-short {
+  max-width: 21rem; }
 
 .design {
   margin-bottom: -30.71rem; }
@@ -1312,17 +1318,21 @@ img {
     margin-bottom: 3.1rem; }
   .footer__icon {
     margin-right: 1rem; }
+    .footer__icon:hover {
+      width: 26px; }
   .footer__address {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .footer__phone {
+    margin: 0; }
 
 .ymap-container {
   position: relative;
   margin-bottom: 4.7rem;
   overflow: hidden;
   cursor: pointer;
-  background: url(../img/map.png) #ffffff no-repeat;
+  background: url(../img/map.jpg) #ffffff no-repeat;
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
@@ -1616,15 +1626,13 @@ img {
     max-width: 19.6rem; }
   .button--primary:hover {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    transition: box-shadow 0.3s;
     background-color: #E3B873;
-    color: #fff; }
+    color: #fff;
+    border: none; }
   .button--outline:hover {
     text-decoration: none; }
-  .phone {
-    text-decoration: underline; }
-    .phone:hover {
-      text-decoration: none; }
+  .phone:hover {
+    text-decoration: none; }
   .control {
     background-color: #131313; }
     .control__text {
@@ -1645,6 +1653,10 @@ img {
         color: #fff; }
       .control__input::placeholder {
         color: #fff; }
+  .video__play {
+    width: 60px; }
+    .video__play:hover {
+      width: 60px; }
   .ymap-container {
     max-width: 44rem;
     max-height: 22rem; }
@@ -1676,6 +1688,8 @@ img {
     margin-bottom: 35rem;
     background-color: #131313;
     color: #fff; }
+    .design__card-title {
+      color: #131313; }
   .customers {
     display: none; }
   .footer {
@@ -1684,7 +1698,9 @@ img {
     .footer__wrap {
       background: none;
       transform: none;
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+    .footer__icon:hover {
+      width: 28px; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1790,7 +1806,8 @@ img {
       max-width: 26rem;
       line-height: 1.8rem; }
       .design__text--section {
-        margin-bottom: 2.6rem; }
+        margin-bottom: 2.6rem;
+        max-width: 24rem; }
     .design__pricetag {
       bottom: -2.2rem;
       padding: 1rem 3.9rem; }
@@ -1872,8 +1889,7 @@ img {
       margin-bottom: 4px;
       font-size: 1.2rem; }
   .swiper-img {
-    margin-top: 2.8rem;
-    height: 160px; }
+    margin-top: 2.8rem; }
   .footer {
     margin-top: -1.429rem; }
     .footer__section-title {
@@ -1900,7 +1916,8 @@ img {
       flex-basis: 79%;
       margin-bottom: 5.6rem; }
       .footer__policy-label {
-        font-size: 1.35rem; }
+        font-size: 1.35rem;
+        width: 280px; }
     .footer__button {
       width: 100%;
       padding: 1.4rem 4.37rem;
@@ -1951,6 +1968,16 @@ img {
       margin-left: 0px; }
     .types__section-title {
       margin-bottom: 2.4rem; } }
+
+@media screen and (max-width: 360px) {
+  .ymap-container {
+    max-width: 25.5rem; }
+  .teams__icon {
+    width: 60px;
+    height: 60px;
+    margin-left: -252px; }
+  .teams__row {
+    align-items: flex-end; } }
 
 @media screen and (max-height: 560px) {
   .hero__scroll-down {

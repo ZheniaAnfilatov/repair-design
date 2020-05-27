@@ -356,6 +356,7 @@ $(document).ready(function () {
       controls: ['zoomControl', 'fullscreenControl']
     });
         myMapTemp.behaviors.disable("scrollZoom");
+        myMapTemp.behaviors.disable('drag');
     var myPlacemarkTemp = new ymaps.Placemark([47.244729, 39.723187], {
         balloonContent: "Здесь может быть ваш адрес",
     }, {
@@ -459,7 +460,7 @@ $(document).ready(function () {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').animate({scrollTop: 0}, 1500);
     });
   });
 

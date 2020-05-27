@@ -98,14 +98,13 @@
     &--primary
       &:hover
         box-shadow: 0px 5px 15px rgba($primary, 0.2)
-        transition: box-shadow 0.3s
         background-color: $primary
         color: $light
+        border: none
     &--outline
       &:hover
         text-decoration: none
   .phone
-    text-decoration: underline
     &:hover
       text-decoration: none
   .control
@@ -122,6 +121,11 @@
       color: $light
       &::placeholder
         color: $light
+  .video
+    &__play
+      width: 60px 
+      &:hover
+        width: 60px 
   .ymap-container
     max-width: 44rem
     max-height: 22rem
@@ -154,6 +158,8 @@
     margin-bottom: 35rem
     background-color: $dark
     color: $light
+    &__card-title
+      color: $dark
   .customers
     display: none
   .footer
@@ -163,6 +169,9 @@
       background: none
       transform: none
       margin-bottom: 0
+    &__icon
+      &:hover
+        width: 28px
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -273,6 +282,7 @@
       line-height: 1.8rem
       &--section
         margin-bottom: 2.6rem
+        max-width: 24rem
     &__pricetag
       bottom: -2.2rem
       padding: 1rem 3.9rem
@@ -354,7 +364,6 @@
         font-size: 1.2rem
     &-img
       margin-top: 2.8rem
-      height: 160px
   .footer
     margin-top: -1.429rem
     &__section-title
@@ -382,6 +391,7 @@
       margin-bottom: 5.6rem
       &-label
         font-size: 1.35rem
+        width: 280px
     &__button
       width: 100%
       padding: 1.4rem 4.37rem
@@ -434,6 +444,16 @@
       margin-left: 0px
     &__section-title
       margin-bottom: 2.4rem
+@media screen and ( max-width: 360px )
+  .ymap-container
+      max-width: 25.5rem
+  .teams
+    &__icon
+      width: 60px
+      height: 60px
+      margin-left: -252px
+    &__row
+      align-items: flex-end
 @media screen and ( max-height: 560px )
   .hero
     &__scroll-down
