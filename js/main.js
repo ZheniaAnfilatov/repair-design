@@ -163,6 +163,7 @@ $(document).ready(function () {
           $(form)[0].reset();
           modal.removeClass('modal--visible');
           modalThanks.addClass('modal__thanks--visible');
+          ym('64399912', 'reachGoal', 'callBack'); return true;
         }
       });
     }
@@ -234,7 +235,7 @@ $(document).ready(function () {
           $(form)[0].reset();
           modal.removeClass('modal--visible');
           modalThanks.addClass('modal__thanks--visible');
-          ym('64399912', 'reachGoal', 'send'); return true;
+          ym('64399912', 'reachGoal', 'request'); return true;
         }
       });
     }
