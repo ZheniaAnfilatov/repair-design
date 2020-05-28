@@ -458,10 +458,15 @@ $(document).ready(function () {
   $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
+        var offtop = 100; 
         var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: 0}, 1500);
+            top = $(id).offset().top - offtop;
+        $('body,html').animate({scrollTop:top}, 1500);
     });
+  });
+
+  $(".hero__scroll-down").click(function(){
+    $('body,html').animate({scrollTop:750}, 1500);
   });
 
   var btnUp = $('.nav__item-up');
