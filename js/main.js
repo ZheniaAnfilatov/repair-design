@@ -467,7 +467,7 @@ $(document).ready(function () {
   });
 
   $(".hero__scroll-down").click(function(){
-    $('body,html').animate({scrollTop:750}, 1500);
+    $('body,html').animate({scrollTop:900}, 1500);
   });
 
   var btnUp = $('.nav__item-up');
@@ -485,7 +485,7 @@ $(document).ready(function () {
   var player;
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '465',
+      height: '100%',
       width: '100%',
       videoId: 'RHzzLqJWqHs',
       events: {
