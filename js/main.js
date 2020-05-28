@@ -139,6 +139,9 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
+      },
+      policyCheckbox: {
+        required: true
       }
     },
      // сообщения
@@ -151,7 +154,8 @@ $(document).ready(function () {
       userPhone: "Заполните поле",
       userEmail: {
         required: "Заполните поле",
-        email: "Введите корректный email"
+        email: "Введите корректный email",
+      policyCheckbox: "Подтвердите ваше согласие"
       },
     },
     submitHandler: function(form) {
@@ -168,13 +172,13 @@ $(document).ready(function () {
       });
     }
   });
-  $('#policy-checkbox-modal').on('change', function () {
-    if ( $('#policy-checkbox-modal').prop('checked') ) {
-        $('.modal__button').attr('disabled', false);
-    } else {
-        $('.modal__button').attr('disabled', true);
-    }
-  });
+  // $('#policy-checkbox-modal').on('change', function () {
+  //   if ( $('#policy-checkbox-modal').prop('checked') ) {
+  //       $('.modal__button').attr('disabled', false);
+  //   } else {
+  //       $('.modal__button').attr('disabled', true);
+  //   }
+  // });
 
   // закрывание на крестик
   closeThanks.on('click', function () {
@@ -362,11 +366,8 @@ $(document).ready(function () {
     }, {
 
         iconLayout: 'default#imageWithContent',
-
         iconImageHref: 'img/map-marker.png',
-
         iconImageSize: [50, 50],
-
         iconImageOffset: [-25, -50],
     });
     myMapTemp.geoObjects.add(myPlacemarkTemp); 

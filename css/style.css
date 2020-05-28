@@ -335,8 +335,7 @@ template {
     .button--primary:hover {
       box-shadow: none;
       background-color: #fff;
-      color: #E3B873;
-      border: 0.5px solid #E3B873; }
+      color: #E3B873; }
   .button--outline {
     border: 1px solid #fff;
     background-color: transparent;
@@ -399,7 +398,7 @@ input.invalid {
 
 div.invalid {
   position: absolute;
-  margin-top: 50px; }
+  margin-top: 53px; }
 
 .container {
   width: 97%;
@@ -1627,8 +1626,7 @@ img {
   .button--primary:hover {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     background-color: #E3B873;
-    color: #fff;
-    border: none; }
+    color: #fff; }
   .button--outline:hover {
     text-decoration: none; }
   .phone:hover {
