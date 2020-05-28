@@ -394,11 +394,12 @@ input:hover, input:active, input:focus {
   outline-offset: 0; }
 
 input.invalid {
-  border-bottom: 1px solid red; }
+  border-bottom: 1px solid tomato; }
 
 div.invalid {
   position: absolute;
-  margin-top: 53px; }
+  margin-top: 53px;
+  color: tomato; }
 
 .container {
   width: 97%;

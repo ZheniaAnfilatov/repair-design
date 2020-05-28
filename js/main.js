@@ -126,6 +126,7 @@ $(document).ready(function () {
   $('.modal__form').validate({
     errorClass: "invalid",
     errorElement: "div",
+    ignore: ":disabled",
     rules: {
       userName: {
         required: true,
@@ -155,8 +156,8 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email",
-      policyCheckbox: "Подтвердите ваше согласие"
       },
+      policyCheckbox: "Подтвердите ваше согласие"
     },
     submitHandler: function(form) {
       $.ajax({
