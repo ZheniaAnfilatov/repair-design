@@ -173,13 +173,6 @@ $(document).ready(function () {
       });
     }
   });
-  // $('#policy-checkbox-modal').on('change', function () {
-  //   if ( $('#policy-checkbox-modal').prop('checked') ) {
-  //       $('.modal__button').attr('disabled', false);
-  //   } else {
-  //       $('.modal__button').attr('disabled', true);
-  //   }
-  // });
 
   // закрывание на крестик
   closeThanks.on('click', function () {
@@ -203,6 +196,7 @@ $(document).ready(function () {
   $('.economy__form').validate({
     errorClass: "invalid",
     errorElement: "div",
+    ignore: ":disabled",
     rules: {
       userName: {
         required: true,
@@ -217,6 +211,9 @@ $(document).ready(function () {
         required: true,
         email: true
       },
+      policyCheckbox: {
+        required: true
+      },
     },
       // сообщения
     messages: {
@@ -229,7 +226,8 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      }
+      },
+      policyCheckbox: "Подтвердите ваше согласие",
     },
     submitHandler: function(form) {
       $.ajax({
@@ -246,18 +244,11 @@ $(document).ready(function () {
     }
   });
 
-  $('#policy-checkbox-economy').on('change', function () {
-    if ( $('#policy-checkbox-economy').prop('checked') ) {
-        $('.economy__button').attr('disabled', false);
-    } else {
-        $('.economy__button').attr('disabled', true);
-    }
-  });
-
     // валидацция формы footer
   $('.footer__form').validate({
     errorClass: "invalid",
     errorElement: "div",
+    ignore: ":disabled",
     rules: {
       userName: {
         required: true,
@@ -265,8 +256,10 @@ $(document).ready(function () {
         maxlength: 15
       },
       userPhone: "required",
-      userQuestion: "required"
-
+      userQuestion: "required",
+      policyCheckbox: {
+        required: true
+      }
     }, 
     // сообщения
     messages: {
@@ -276,7 +269,8 @@ $(document).ready(function () {
         maxlength: "Имя не короче 2 символов и не больше 15"
       },
       userPhone: "Заполните поле",
-      userQuestion: "Заполните поле"
+      userQuestion: "Заполните поле",
+      policyCheckbox: "Подтвердите ваше согласие"
     },
     submitHandler: function(form) {
       $.ajax({
@@ -292,34 +286,31 @@ $(document).ready(function () {
     }
   });
 
-  $('#policy-checkbox-footer').on('change', function () {
-    if ( $('#policy-checkbox-footer').prop('checked') ) {
-        $('.footer__button').attr('disabled', false);
-    } else {
-        $('.footer__button').attr('disabled', true);
-    }
-  });
-
   // валидацция формы control
   $('.control__form').validate({
     errorClass: "invalid",
     errorElement: "div",
+    ignore: ":disabled",
     rules: {
       userName: {
         required: true,
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required"
+      userPhone: "required",
+      policyCheckbox: {
+        required: true
+      },
     }, 
     // сообщения
     messages: {
       userName: {
         required: "Заполните поле",
         minlength: "Имя не короче 2 символов и не больше 15",
-        maxlength: "Имя не короче 2 символов и не больше 15"
+        maxlength: "Имя не короче 2 символов и не больше 15",
       },
-      userPhone: "Заполните поле"
+      userPhone: "Заполните поле",
+      policyCheckbox: "Подтвердите ваше согласие"
     },
     submitHandler: function(form) {
       $.ajax({
@@ -332,14 +323,6 @@ $(document).ready(function () {
           modalThanks.addClass('modal__thanks--visible');
         }
       });
-    }
-  });
-
-  $('#policy-checkbox-control').on('change', function () {
-    if ( $('#policy-checkbox-control').prop('checked') ) {
-        $('.control__button').attr('disabled', false);
-    } else {
-        $('.control__button').attr('disabled', true);
     }
   });
 
