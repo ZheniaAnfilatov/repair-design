@@ -355,6 +355,8 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
+  .input-group {
+    position: relative; }
   .input--light::-moz-placeholder {
     color: #fff; }
   .input--light:-ms-input-placeholder {
@@ -376,6 +378,7 @@ template {
     .policy__checkbox:checked ~ .policy__label::before {
       background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
   .policy__label {
+    position: relative;
     display: flex;
     align-items: center; }
     .policy__label::before {
@@ -766,6 +769,7 @@ img {
     margin: auto;
     justify-content: space-between; }
   .control__input-group {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-basis: 30%; }
@@ -788,7 +792,9 @@ img {
   .control__policy {
     flex-basis: 92%;
     margin-top: 2.3rem;
-    font-size: 1.14rem; }
+    font-size: 1.14rem;
+    display: flex;
+    justify-content: center; }
     .control__policy-label {
       justify-content: center; }
 
@@ -1293,7 +1299,9 @@ img {
         margin-bottom: 3.5rem; }
   .footer__policy {
     flex-basis: 100%;
-    margin-bottom: 3.6rem; }
+    margin-bottom: 3.6rem;
+    display: flex;
+    justify-content: center; }
   .footer__button {
     margin: auto;
     padding: 1.214rem 4.37rem;
