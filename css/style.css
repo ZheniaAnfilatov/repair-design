@@ -1813,6 +1813,10 @@ img {
       margin-top: -2.5rem;
       margin-right: 1rem;
       margin-left: 1rem; }
+      .footer__icon:hover {
+        width: 41.5px; }
+    .footer__phone {
+      color: #E3B873; }
   .ymap-container {
     max-width: 28.5rem;
     max-height: 21.1rem;

@@ -392,7 +392,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function(){
-    $("#menu").on("click","a", function (event) {
+    $("#menu, #footer").on("click","a", function (event) {
         event.preventDefault();
         var offtop = 100; 
         var id  = $(this).attr('href'),
