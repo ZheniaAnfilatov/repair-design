@@ -392,10 +392,10 @@ $(document).ready(function () {
   });
 
   $(document).ready(function(){
-    $("#menu, #footer").on("click","a", function (event) {
+    $("#menu, #footer").on("click", '[href*="#"]', function (event) {
         event.preventDefault();
         var offtop = 100; 
-        var id  = $(this).attr('href'),
+        var id  = $(this).attr('href*="#"'),
             top = $(id).offset().top - offtop;
         $('body,html').animate({scrollTop:top}, 1500);
     });

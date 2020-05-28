@@ -325,6 +325,10 @@ template {
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 0.96rem; }
+  .button:active, .button:focus {
+    outline: none !important; }
+  .button::-moz-focus-inner {
+    border: 0 !important; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -341,7 +345,7 @@ template {
     background-color: transparent;
     color: #fff; }
     .button--outline:hover {
-      text-decoration: underline; }
+      background-color: #E3B873; }
 
 .label {
   font-size: 1.07rem; }
@@ -790,11 +794,9 @@ img {
     padding: 1.25rem 4.4rem;
     font-size: 15px; }
   .control__policy {
-    flex-basis: 92%;
+    margin-left: 223px;
     margin-top: 2.3rem;
-    font-size: 1.14rem;
-    display: flex;
-    justify-content: center; }
+    font-size: 1.14rem; }
     .control__policy-label {
       justify-content: center; }
 
@@ -1172,10 +1174,8 @@ img {
         flex-basis: 100%;
         margin-bottom: 3.5rem; }
   .footer__policy {
-    flex-basis: 100%;
     margin-bottom: 3.6rem;
-    display: flex;
-    justify-content: center; }
+    margin-left: 115px; }
   .footer__button {
     margin: auto;
     padding: 1.214rem 4.37rem;
@@ -1512,7 +1512,7 @@ img {
     background-color: #E3B873;
     color: #fff; }
   .button--outline:hover {
-    text-decoration: none; }
+    background-color: transparent; }
   .phone:hover {
     text-decoration: none; }
   .control {
@@ -1746,7 +1746,9 @@ img {
       margin-top: 2.3rem;
       margin-bottom: 5.5rem;
       font-size: 1.36rem;
-      color: #fff; }
+      margin-left: 0; }
+      .control__policy-label {
+        justify-content: start; }
     .control__text {
       color: #fff;
       font-size: 14.2px;
@@ -1800,10 +1802,10 @@ img {
     .footer__policy {
       margin-top: -3.6rem;
       flex-basis: 79%;
-      margin-bottom: 5.6rem; }
+      margin-bottom: 5.6rem;
+      margin-left: 0; }
       .footer__policy-label {
-        font-size: 1.35rem;
-        width: 280px; }
+        font-size: 1.35rem; }
     .footer__button {
       width: 100%;
       padding: 1.4rem 4.37rem;
@@ -1817,6 +1819,10 @@ img {
         width: 41.5px; }
     .footer__phone {
       color: #E3B873; }
+  .policy {
+    flex-basis: 100%; }
+    .policy__label--center {
+      justify-content: start; }
   .ymap-container {
     max-width: 28.5rem;
     max-height: 21.1rem;
