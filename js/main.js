@@ -64,55 +64,6 @@ $(document).ready(function () {
   next.css('left', prev.width() + 10 + bullets.width() + 35)
   bullets.css('left', prev.width() + 25)
 
-  // swiper Steps 1
-  var mySwiperSteps = new Swiper ('.steps-swiper', {
-    loop: true,
-    pagination: {
-      el: '.steps__swiper-pagination',
-      type: 'bullets',
-
-    },
-    navigation: {
-      nextEl: '.steps__swiper-button-next',
-      prevEl: '.steps__swiper-button-prev',
-    },
-  })
-
-  var stepsNext = $('.steps__swiper-button-next');
-  var stepsPrev = $('.steps__swiper-button-prev');
-  var stepsBullets = $('.steps__swiper-pagination');
-
-  stepsNext.css('left', stepsPrev.width() + 10 + stepsBullets.width() + 30)
-  stepsBullets.css('left', stepsPrev.width() + 20)
-
-  // swiper Steps 2
-  var galleryThumbs = new Swiper('.gallery-thumbs', {
-    spaceBetween: 10,
-    slidesPerView: 4,
-    virtualTranslate: true,
-    freeMode: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-  });
-  var bullets2 = $('.steps__swiper-pagination2');
-  var galleryTop = new Swiper('.gallery-top', {
-    spaceBetween: 10,
-    loop: true,
-    pagination: {
-      el: '.steps__swiper-pagination2',
-      type: 'fraction',
-
-    },
-    navigation: {
-      nextEl: '.steps__swiper-button-next',
-      prevEl: '.steps__swiper-button-prev',
-    },
-    thumbs: {
-      swiper: galleryThumbs
-    }
-    
-  });
-
   // анимация
   new WOW().init();
 
