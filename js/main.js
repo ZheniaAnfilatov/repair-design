@@ -391,14 +391,12 @@ $(document).ready(function () {
   ymap();
   });
 
-  $(document).ready(function(){
-    $("#menu, #footer").on("click", '[href*="#"]', function (event) {
-        event.preventDefault();
-        var offtop = 100; 
-        var id  = $(this).attr('href*="#"'),
-            top = $(id).offset().top - offtop;
-        $('body,html').animate({scrollTop:top}, 1500);
-    });
+  $("body").on('click', '[href*="#"]', function (e) {
+    var fixed_offset = 10;
+    $('html,body').stop().animate({
+      scrollTop: $(this.hash).offset().top - fixed_offset
+    }, 1000);
+    e.preventDefault();
   });
 
   $(".hero__scroll-down").click(function(){

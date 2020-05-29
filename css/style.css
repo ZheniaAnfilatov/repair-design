@@ -1841,10 +1841,8 @@ img {
       max-width: 20rem; }
     .teams__card-title {
       font-size: 1.45rem; }
-    .teams__idea {
-      justify-content: flex-end; }
     .teams__icon {
-      margin-left: -269px; }
+      margin-left: -149px; }
     .teams__profession {
       font-size: 1.45rem;
       padding-bottom: 2.1rem; }
@@ -1864,6 +1862,14 @@ img {
       margin-left: 0px; }
     .types__section-title {
       margin-bottom: 2.4rem; } }
+
+@media screen and (max-width: 380px) {
+  .teams__idea {
+    justify-content: flex-end; }
+  .teams__icon {
+    margin-left: -259px; }
+  .teams__image {
+    width: 295px; } }
 
 @media screen and (max-width: 360px) {
   .ymap-container {
