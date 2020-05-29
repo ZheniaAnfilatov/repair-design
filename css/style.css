@@ -1864,20 +1864,26 @@ img {
       margin-bottom: 2.4rem; } }
 
 @media screen and (max-width: 380px) {
-  .teams__idea {
-    justify-content: flex-end; }
   .teams__icon {
-    margin-left: -259px; }
+    width: 60px;
+    height: 60px;
+    margin-left: -262px; }
   .teams__image {
-    width: 295px; } }
+    width: 295px; }
+  .teams__idea {
+    justify-content: flex-end; } }
 
 @media screen and (max-width: 360px) {
   .ymap-container {
     max-width: 25.5rem; }
+  .teams__idea {
+    justify-content: center; }
+  .teams__image {
+    width: 270px; }
   .teams__icon {
     width: 60px;
     height: 60px;
-    margin-left: -252px; }
+    margin-left: -131px; }
   .teams__row {
     align-items: flex-end; } }
 
